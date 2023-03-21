@@ -1,6 +1,4 @@
 .container {
-    max-width: 768px;
-    min-width: 320px;
     margin: auto;
 }
 
@@ -10,5 +8,6 @@ body {
 
 header img {
     height: 44px;
+    align-items: center;
     /*font-family: 'Shrikhand', cursive;*/
 }
