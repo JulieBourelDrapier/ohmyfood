@@ -1,0 +1,14 @@
+.container {
+    max-width: 768px;
+    min-width: 320px;
+    margin: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header img {
+    height: 44px;
+    /*font-family: 'Shrikhand', cursive;*/
+}
