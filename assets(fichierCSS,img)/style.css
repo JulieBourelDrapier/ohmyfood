@@ -1,4 +1,8 @@
+/*sass : prévoir de travailler sur la fonction darken en lien avec la couleur grise qui revient*/
+
+
 .container {
+    max-width: 600px;
     margin: auto;
 }
 
@@ -6,14 +10,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header img {
-    height: 44px;
+.hdr {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+header img {
+    height: 30px;
     /*font-family: 'Shrikhand', cursive;*/
 }
 
 .section1 {
     background-color: #D2D2D2;
+}
+
+.reservations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 h1 { /*pour rappel, les titres sont bold par défaut*/
