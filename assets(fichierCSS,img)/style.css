@@ -16,7 +16,6 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding-bottom: 40px;
 }
 
 header img {
@@ -36,11 +35,16 @@ header img {
     background-color: #EAEAEA;  
     justify-content: center;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .icon {
     padding-right: 15px;
+    font-size: 1.2em;
+}
+
+.localisation {
+    font-size: 1.1em;
 }
 
 
@@ -48,6 +52,8 @@ header img {
 .section1 {
     margin: auto;
     width: 100%;
+    background-color: #D2D2D2;
+    padding-top: ;
 }
 
 .reservations {
