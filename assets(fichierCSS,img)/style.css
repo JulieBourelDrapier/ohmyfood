@@ -3,6 +3,7 @@
 /*MISE EN PAGE*/
 .container {
     margin: auto;
+    min-width: 320px;
 }
 
 body {
@@ -35,7 +36,7 @@ header img {
     background-color: #EAEAEA;  
     justify-content: center;
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .icon {
@@ -84,9 +85,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-weight: bold;
     border-radius: 25px;
     border: none;
-    padding: 13px;
-    padding-left: 19px;
-    padding-right: 19px;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 /*SECTION2*/
@@ -128,7 +131,6 @@ h2 {
     gap: 25px;
     padding: 28px;
     width: 322px;
-
 }
 
 .colored-group {
@@ -140,5 +142,5 @@ h2 {
 }
 
 .colored-group i {
-color: #9556DC;
+    color: #9556DC;
 }
