@@ -2,36 +2,58 @@
 
 /*MISE EN PAGE*/
 .container {
-    max-width: 600px;
     margin: auto;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: auto;
 }
 
 /*HEADER*/
 .hdr {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 header img {
     height: 30px;
-    /*font-family: 'Shrikhand', cursive;*/
 }
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*topnav*/
+.topnav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #EAEAEA;  
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.icon {
+    padding-right: 15px;
+}
+
 
 /*SECTION 1*/
 .section1 {
-    background-color: #D2D2D2;
+    margin: auto;
+    width: 100%;
 }
 
 .reservations {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 h1 { /*pour rappel, les titres sont bold par défaut*/
@@ -45,10 +67,30 @@ p {
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
-    background: linear-gradient(to right, #9356DC,#FF79DA);
+    background: linear-gradient(to left, #9356DC,#FF79DA);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    padding: 13px;
+    padding-left: 19px;
+    padding-right: 19px;
 }
 
 /*SECTION2*/
+
+.section2 {
+    width: 100%;
+    margin: auto;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2 {
     font-size: 24px;
     padding-top: 48px;
