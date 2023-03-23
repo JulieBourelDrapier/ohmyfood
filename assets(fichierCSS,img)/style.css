@@ -114,19 +114,31 @@ h2 {
     gap: 20px;
     width: 100%;
     align-items: center;
-    padding-left: 8%;
 }
 
 .group {
     display: flex;
     flex-direction: row;
-    border: 2px solid deeppink;
+    /*border: 2px solid deeppink;*/
     box-sizing: border-box;
-    border-radius: 25px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center;
     background-color: #F6F6F6;
-    gap: 20px;
-    padding: 30px;
+    gap: 25px;
+    padding: 28px;
     width: 322px;
 
+}
+
+.colored-group {
+    background-color: #F5EDFF;
+} /*il s'agit de la color-secondary*/
+
+.group i {
+    color: #7E7E7E;
+}
+
+.colored-group i {
+color: #9556DC;
 }
