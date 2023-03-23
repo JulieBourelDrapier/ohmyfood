@@ -61,9 +61,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     color: #000;
 }
 
-p {
+.reservations p {
     font-size: 18px;
     color: #353535;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 27px;
+    align-items: center;
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
@@ -88,16 +92,17 @@ p {
 .process {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 h2 {
     font-size: 24px;
     padding-top: 48px;
     padding-bottom: 26px;
+    padding-left: 8%;
 }
 
 .group {
     display: flex;
     flex-direction: row;
+    padding-left: 8%;
 }
