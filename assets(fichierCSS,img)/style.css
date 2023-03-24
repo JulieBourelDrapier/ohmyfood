@@ -99,14 +99,19 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .process {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /*gap: 20px;*/
     padding-bottom: 40px;
 }
 
 .process h2 {
-    font-size: 24px;
     padding-top: 48px;
     padding-left: 15%;
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .group {
