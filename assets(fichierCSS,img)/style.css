@@ -99,25 +99,25 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .process {
     display: flex;
     flex-direction: column;
-    /*gap: 20px;*/
-    padding-bottom: 40px;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 .process h2 {
     padding-top: 48px;
-    padding-left: 15%;
+    align-items: center;
 }
 
 .groups {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 }
 
 .group {
     display: flex;
     flex-direction: row;
-    width: 100%;
     align-items: center;
 }
 
@@ -153,7 +153,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     height: 20px;
     background-color: #9556DC; /*color-primary*/
     color: #FFF;
-    margin-left: 70px;
     padding-left: 6px;
     font-size: 0.9em;
 }
@@ -168,9 +167,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    padding-left: 15%;
     background-color: #D2D2D2;
     padding-bottom: 70px;
+    align-items: center;
 }
 
 .places h2 {
@@ -181,7 +180,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px;
+    align-items: center;
 }
 
 .card {
