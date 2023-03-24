@@ -92,8 +92,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-/*SECTION2*/
-
+/* SECTION2 */
 .section2 {
     width: 100%;
     margin: auto;
@@ -108,7 +107,8 @@ h2 {
     font-size: 24px;
     padding-top: 48px;
     padding-bottom: 26px;
-    padding-left: 8%;
+    padding-left: 15%;
+
 }
 
 .groups {
@@ -122,20 +122,24 @@ h2 {
 .group {
     display: flex;
     flex-direction: row;
-    /*border: 2px solid deeppink;*/
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     text-align: center;
     background-color: #F6F6F6;
-    gap: 25px;
     padding: 28px;
-    width: 322px;
+    width: 340px;
+}
+
+.instructions { 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .colored-group {
     background-color: #F5EDFF;
-} /*il s'agit de la color-secondary*/
+} /*décrit comme faisant partie de la color-secondary sur la maquette mais ce n'est pas la même*/
 
 .group i {
     color: #7E7E7E;
@@ -143,4 +147,15 @@ h2 {
 
 .colored-group i {
     color: #9556DC;
+}
+
+.number {
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 24px;
+    height: 23px;
+    background-color: #9556DC; /*color-primary*/
+    color: #FFF;
+    margin-right: 40px;
 }
