@@ -23,7 +23,7 @@ header img {
     height: 30px;
 }
 
-.logo {
+.imglogo {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -167,6 +167,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-top: 20px;
     padding-left: 15%;
     background-color: #D2D2D2;
+    padding-bottom: 70px;
 }
 
 .places h2 {
@@ -223,4 +224,36 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .zone {
     padding-left: 2%;
     padding-bottom: 4%;
+}
+
+/* FOOTER */
+.ftr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #353535;
+}
+
+.logo {
+    font-family: 'shrikhand', sans-serif;
+    font-size: 1.2em;
+    color: #FFF;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.ftr ul{
+    list-style-type: none;
+}
+
+.ftr li {
+    color: #FFF;
+    padding-bottom: 2%;
+}
+
+.ftr i {
+    font-size: 0.9em;
+    padding-right: 6px;
+
+/* animation pour produire rotation sur handshake ?*/
 }
