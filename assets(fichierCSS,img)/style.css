@@ -197,7 +197,20 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     height: 230px;
 }
 
+
 .menu {
     display: flex;
     flex-direction: row;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.like {
+    padding-left: 40%;
+    padding-top: 20px;
+  
 }
