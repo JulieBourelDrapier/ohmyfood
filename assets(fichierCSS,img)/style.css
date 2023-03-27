@@ -324,7 +324,7 @@ section img {
 
 .courses {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -334,8 +334,17 @@ section img {
     background-color: #F6F6F6;
 }
 
-.+{
-    color: red;
+.courses h3 {
+    font-size: 18px;
+}
+
+.d-p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
