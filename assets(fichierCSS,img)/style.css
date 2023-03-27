@@ -334,6 +334,10 @@ section img {
     background-color: #F6F6F6;
 }
 
+.+{
+    color: red;
+}
+
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
     background: linear-gradient(to left, #9356DC,#FF79DA);
     color: white;
