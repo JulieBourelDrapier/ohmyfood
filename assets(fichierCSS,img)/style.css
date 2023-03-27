@@ -322,7 +322,7 @@ section img {
     flex-direction: column;
 }
 
-.suggestion {
+.courses {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
