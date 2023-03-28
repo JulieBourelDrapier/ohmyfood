@@ -227,7 +227,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-left: 10px;
     padding-right: 10px;
     border: #000;
-    z-index: 999999px;
+    z-index: 999999;
     margin-left: -100px;
     margin-top: 15px;
     border-radius: 2px;
@@ -301,7 +301,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px; 
-    gap: 150px;
+    gap: 40%;
 }
 
 .hdr-icon {
