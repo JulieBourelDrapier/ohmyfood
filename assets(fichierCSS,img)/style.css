@@ -19,7 +19,8 @@ body {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px; 
-    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 6px 6px 25px rgba(198, 194, 194, 0.824);
 }
 
 header img {
@@ -351,21 +352,29 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .sctn {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     width: 100%;
+    padding-left: 5%;
+}
+
+.sctn h2 {
+    font-size: 16px;
+    font-weight: lighter;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 20px;
+    width: 8%;
 }
 
 .courses {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 60%;
+    width: 95%;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding-bottom: 20px;
-    background-color: #F6F6F6;
+    background-color: #FFF;
     padding-left: 20px;
 }
 
@@ -381,9 +390,16 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-family: 'Roboto', sans-serif;
 }
 
+.details {
+    font-size: 14px;
+}
+
 .price {
     padding-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
+
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
     background: linear-gradient(to left, #9356DC,#FF79DA);
     color: white;
