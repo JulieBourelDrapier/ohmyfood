@@ -48,7 +48,7 @@ header img {
 }
 
 
-/*SECTION 1*/
+/*SECTION1 RESERVATIONS*/
 .section1 {
     margin: auto;
     width: 100%;
@@ -92,7 +92,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* SECTION2 */
+/* SECTION2 PROCESS */
 .section2 {
     width: 100%;
     margin: auto;
@@ -166,7 +166,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-weight: bold;
 }
 
-/* SECTION3 */ 
+/* SECTION3 PLACES */ 
 .section3 {
     width: 100%;
     margin: auto;
@@ -206,9 +206,30 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 .card img {
     border-radius: 20px 20px 0px 0px;
-    object-fit:cover;
+    object-fit: cover;
     width: 100%;
     height: 170px;
+}
+
+.new {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-new {
+    background: #99E2D0;
+    color: #008766;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    width: 25%;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: #000;
+    z-index: 999999px;
+    margin-left: -100px;
+    margin-top: 15px;
+    border-radius: 2px;
 }
 
 .menu {
