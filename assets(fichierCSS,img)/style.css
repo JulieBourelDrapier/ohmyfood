@@ -314,7 +314,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     width: 100%;
 }
 
-section img {
+.banner img {
     width: 100%;
     object-fit: cover;
 }
