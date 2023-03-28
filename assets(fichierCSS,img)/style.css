@@ -287,8 +287,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-bottom: 2%;
 }
 
+.rotated i {
+    transform: rotate(-35deg);
+}
+
 .ftr i {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-right: 6px;
 
 /* animation pour produire rotation sur handshake ?*/
