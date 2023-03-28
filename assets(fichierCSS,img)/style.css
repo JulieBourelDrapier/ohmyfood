@@ -309,7 +309,14 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-size: 1.5em;
 }
 
-/* section ou je présente le menu*/
+/* bannière avec la photo du lieu 1*/
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section ou je présente les menus*/
 .main-sctn {
     width: 100%;
 }
@@ -324,17 +331,10 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     border-radius: 80px 80px 0 0;    
 }
 
-.banner {
-    display: flex;
-    flex-direction: column;
-}
-
-.banner img {
-    width: 100%;
-    object-fit: cover;
-}
 
 .presentation {
+    z-index: 999999;
+    margin-top: -10px;
     display: flex;
     flex-direction: row;
     width: 100%;
