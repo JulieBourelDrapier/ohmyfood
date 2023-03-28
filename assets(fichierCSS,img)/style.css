@@ -319,22 +319,15 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 /* section ou je présente les menus*/
 .main-sctn {
     width: 100%;
-}
-
-.mn {
     display: flex;
     flex-direction: column;
-    /*gap: 20px;*/
     background-color: deeppink;
     align-items: center;
     padding-bottom: 60px;
-    border-radius: 80px 80px 0 0;    
+    border-radius: 80px 80px 0 0;
 }
 
-
 .presentation {
-    z-index: 999999;
-    margin-top: -10px;
     display: flex;
     flex-direction: row;
     width: 100%;
