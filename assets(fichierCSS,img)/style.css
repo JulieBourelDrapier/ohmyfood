@@ -231,7 +231,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     color: #008766;
     font-size: 14px;
     /*font-weight: bold;*/
-    width: 25%;
+    width: 80px;
     height: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -443,6 +443,36 @@ padding-left: 40px;
 
 }
 
-/* FOOTER */
-/* pas de différence avec celui de la homepage */
-/* animation pour produire rotation sur handshake ? */
+/* FOOTER : pas de différence avec celui de la homepage voir au dessus */
+
+
+
+/*********************** Media queries desktop **********************/
+@media screen and (min-width: 993px) {   
+/* SECTION2 PROCESS */
+.groups {
+    margin: auto;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    
+}
+
+.cards {
+    margin: auto;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;   
+}
+
+.ftr {
+    flex-direction: row;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
+    /* apply order après avoir crée une div pour chaque element*/
+}
