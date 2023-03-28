@@ -336,7 +336,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: row;
     justify-content: space-around;
     margin-top: 30px ;
-    
 }
 
 
@@ -346,7 +345,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .presentation i {
-    padding-top: 6%;
+    padding-top: 30px;
     font-size: 1.8em;
 }
 
