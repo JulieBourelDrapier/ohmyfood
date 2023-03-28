@@ -362,7 +362,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-weight: lighter;
     border-bottom: 3px solid #99E2D0;
     padding-bottom: 20px;
-    width: 8%;
+    width: 40px;
 }
 
 .courses {
