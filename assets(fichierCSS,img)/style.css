@@ -301,7 +301,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-top: 30px;
     padding-bottom: 30px; 
     gap: 50px;
-
 }
 
 .hdr-icon {
@@ -309,43 +308,54 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-size: 1.5em;
 }
 
-/* bannière avec la photo du lieu 1*/
-
+/* bannière */
 .banner img {
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 /* section ou je présente les menus*/
+
 .main-sctn {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: deeppink;
+    gap: 30px;
+    background-color:lightgrey;
     align-items: center;
     padding-bottom: 60px;
     border-radius: 80px 80px 0 0;
+    position: absolute;
+    margin-top: -80px;
 }
 
+
 .presentation {
+    display: flex;
+    flex-direction: column;
+    /*gap: 10px;*/
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
 }
 
+
 .presentation h1{
     font-family: 'shrikhand', sans-serif;
+    font-size: 28px;
 }
 
 .presentation i {
-    padding-top: 4%;
-    font-size: 1.5em;
+    padding-top: 6%;
+    font-size: 1.8em;
 }
 
 .sctn {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .courses {
@@ -365,12 +375,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .d-p {
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
