@@ -205,6 +205,15 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: #FFF; 
 }
 
+.card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card a:hover {
+    color: #9556DC; 
+}
+
 .card img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
