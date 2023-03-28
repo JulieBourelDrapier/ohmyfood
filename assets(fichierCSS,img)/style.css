@@ -130,8 +130,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 28px;
-    width: 330px;
-    gap: 20px;
+    width: 320px;
+    gap: 30px;
     background-color: #F6F6F6;
 }
 
@@ -141,6 +141,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 .group i {
     color: #7E7E7E;
+    margin-left: 5px;
 }
 
 .colored-instructions i {
