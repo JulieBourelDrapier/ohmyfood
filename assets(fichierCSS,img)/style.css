@@ -60,7 +60,7 @@ header img {
 .reservations {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
     width: 100%;
 }
 
@@ -73,9 +73,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-size: 18px;
     color: #353535;
     padding-bottom: 27px;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
@@ -96,12 +95,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .section2 {
     width: 100%;
     margin: auto;
+    padding-bottom: 70px;
 }
 
 .process {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
 }
 
 .process h2 {
