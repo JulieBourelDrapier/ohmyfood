@@ -162,6 +162,10 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     z-index: 999999;
 }
 
+.instructions span {
+    font-weight: bold;
+}
+
 /* SECTION3 */ 
 .section3 {
     width: 100%;
