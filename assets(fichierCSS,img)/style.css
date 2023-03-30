@@ -24,7 +24,7 @@ body {
     box-shadow: 6px 6px 25px rgba(198, 194, 194, 0.824);
 }
 
-header img {
+.hdr img {
     height: 30px;
 }
 
@@ -50,20 +50,17 @@ header img {
 }
 
 
-/*SECTION1 RESERVATIONS*/
-.section1 {
+/* PREMIERE SECTION RESERVATIONS*/
+.reservations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; 
     margin: auto;
     width: 100%;
     background-color: #f6F6F6;
     padding-top: 40px;
-    padding-bottom: 50px;
-}
-
-.reservations {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%;
+    padding-bottom: 50px; 
 }
 
 h1 { /*pour rappel, les titres sont bold par défaut*/
@@ -93,16 +90,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* SECTION2 PROCESS */
-.section2 {
-    width: 100%;
-    margin: auto;
-    padding-bottom: 70px;
-}
-
+/* DEUXIEME SECTION PROCESS */
 .process {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 70px;
 }
 
 .process h2 {
@@ -169,16 +163,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 /* SECTION3 PLACES */ 
-.section3 {
-    width: 100%;
-    margin: auto;
-}
-
 .places {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    margin: auto;
+    width: 100%;
     background-color: #F6F6F6;
+    padding-top: 20px;
     padding-bottom: 70px;
 }
 
@@ -187,8 +178,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-bottom: 10px;
     padding-left: 6%;
 }
-
-   
+ 
 .cards {
     display: flex;
     flex-direction: column;
@@ -446,29 +436,40 @@ padding-left: 40px;
 
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 
-
+/*********************** Media queries tablette *********************/
 
 /*********************** Media queries desktop **********************/
-@media screen and (min-width: 993px) {   
+@media screen and (min-width: 993px) {  
+/* HEADER */
+    .hdr {
+        width: 100%;
+    }
+
 /* SECTION2 PROCESS */
-.groups {
-    margin: auto;
-    flex-direction: row;
-    width: 80%;
-    align-items: center;
-    
-}
+    .groups {
+        margin: auto;
+        flex-direction: row;
+        /*width: 100%;*/
+        align-items: center;    
+    }
 
 /* SECTION3 PLACES */
+    .places h2 {
+    padding-left: 180px;
+    }
+
 .cards {
-    margin: auto;
+    
     flex-direction: row;
-    /*width: 80%;*/   
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
 }
 
 .card {   
-width: 490px; /* + gd en version desktop */
-}
+    width: 490px; /* + gd en version desktop */
+    }
 
 .card img {
     height: 230px; /* + gd en version desktop */
@@ -486,4 +487,5 @@ ul {
     flex-direction: row;
     /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
     /* apply order après avoir crée une div pour chaque element*/
+}
 }
