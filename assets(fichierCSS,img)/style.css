@@ -443,15 +443,71 @@ padding-left: 40px;
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 
 /*********************** Media queries tablette *********************/
+@media screen and (min-width: 769px) {  
+
+/* DEUXIEME SECTION PROCESS */
+.groups {
+    margin: auto;
+    flex-direction: row;
+}
+
+.instructions {
+    width: 280px;
+}
+
+/* TROISIEME SECTION PLACES */
+.cards {
+    /*margin: auto;*/
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 390px;
+}
+
+/* FOOTER */
+.ftr {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    padding-right: 20px;
+}
+
+.ac-i {
+    flex-direction: row;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+.ss-i {
+    flex-direction: row;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+}
+
+
 
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 993px) {  
 /* HEADER */
     .hdr {
-        width: 100%;
+        /*width: 100%; removed car déjà indiqué en mobile*/
     }
 
-/* SECTION2 PROCESS */
+/* DEUXIEME SECTION PROCESS */
 
     .process h2 {
         padding-left: 200px;
@@ -498,7 +554,6 @@ padding-left: 40px;
         flex-direction: row;
         padding-left: 0;
         padding-bottom: 50px;
-        /*justify-content: flex-end;*/
     }
 
     .logo {
@@ -512,7 +567,6 @@ padding-left: 40px;
         flex-direction: row;
         padding-top: 24px;
         justify-content: flex-end;
-        /*padding-left: 600px;*/
     }
 
     .ss-i {
