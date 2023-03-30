@@ -5,6 +5,7 @@
 .container {
     margin: auto;
     /*min-width: px;*/
+    padding-bottom: 10px;
 }
 
 body {
@@ -269,14 +270,27 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: #353535;
     color: #FFF;
     padding-left: 20px;
+    padding-bottom: 20px;
+    gap: 6px;
 }
 
 .logo {
     font-family: 'shrikhand', sans-serif;
     font-size: 1.2em;
     padding-top: 20px;
-    padding-bottom: 20px;
-    flex-direction: row-reverse;
+    padding-bottom: 10px;
+}
+
+.ac-i {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ss-i {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .rotated i {
@@ -482,17 +496,42 @@ padding-left: 40px;
 
     .ftr {
         flex-direction: row;
-        width: 100%;
-        background-color: #008766;
+        padding-left: 0;
+        padding-bottom: 50px;
     }
 
-    ul {
-        display: flex;
+    .logo {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 50px;
+    }
+
+    .ac-i {
         flex-direction: row;
-        gap: 50px;
-        /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
-        /* apply order après avoir crée une div pour chaque element*/
+        padding-top: 24px;
+        padding-left: 640px;
+        gap: 10px;
     }
 
-    
+    .ss-i {
+        flex-direction: row;
+        padding-top: 24px;
+    }
+
+    .one {
+        order: 3;
+    }
+
+    .two {
+        order: 1;
+        flex: 1;
+    }
+
+    .three {
+        order: 2;
+    }
+
+        /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
+        /* apply order après avoir crée une div pour chaque element*/   
 }
