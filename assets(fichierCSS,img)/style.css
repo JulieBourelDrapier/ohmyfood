@@ -1,3 +1,4 @@
+/* Projet 4 Ohmyfood nouvelle version */
 /*sass : prévoir de travailler sur la fonction darken en lien avec la couleur grise qui revient*/
 
 /*MISE EN PAGE*/
@@ -458,19 +459,29 @@ padding-left: 40px;
     
 }
 
+/* SECTION3 PLACES */
 .cards {
     margin: auto;
     flex-direction: row;
-    width: 80%;
-    align-items: center;   
+    /*width: 80%;*/   
 }
+
+.card {   
+width: 490px; /* + gd en version desktop */
+}
+
+.card img {
+    height: 230px; /* + gd en version desktop */
+}
+
+/* FOOTER */
 
 .ftr {
     flex-direction: row;
     width: 100%;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
     /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
