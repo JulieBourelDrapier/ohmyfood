@@ -293,8 +293,10 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .ftr i {
     font-size: 0.8em;
     padding-right: 6px;
+}
 
-/* animation pour produire rotation sur handshake ?*/
+.hide-md {
+    display: none;
 }
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
@@ -491,10 +493,17 @@ padding-left: 40px;
         width: 100%;
 }
 
+    .hide-lg {
+        display: none;
+}
+ 
     ul {
         display: flex;
         flex-direction: row;
+        gap: 50px;
         /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
         /* apply order après avoir crée une div pour chaque element*/
     }
+
+    
 }
