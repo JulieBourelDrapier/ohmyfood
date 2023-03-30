@@ -102,7 +102,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .process h2 {
     padding-top: 48px;
     padding-left: 6%;
-   
 }
 
 .groups {
@@ -446,6 +445,11 @@ padding-left: 40px;
     }
 
 /* SECTION2 PROCESS */
+
+    .process h2 {
+        padding-left: 200px;
+    }
+
     .groups {
         margin: auto;
         flex-direction: row;
@@ -454,38 +458,43 @@ padding-left: 40px;
     }
 
 /* SECTION3 PLACES */
+    .places {
+        padding-top: 0;
+    }
+    
     .places h2 {
-    padding-left: 180px;
+      padding-left: 200px;
     }
 
-.cards {
-    
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 90px;
+    .cards {
+        margin: auto;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        /*gap: 90px;*/
 }
 
-.card {   
-    width: 490px; /* + gd en version desktop */
+    .card {   
+        width: 490px; /* + gd en version desktop */
+        margin-bottom: 30px;
     }
 
-.card img {
-    height: 230px; /* + gd en version desktop */
+    .card img {
+        height: 230px; /* + gd en version desktop */
 }
 
 /* FOOTER */
-
-.ftr {
-    flex-direction: row;
-    width: 100%;
+    .ftr {
+        flex-direction: row;
+        width: 100%;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
-    /* apply order après avoir crée une div pour chaque element*/
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+        /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
+        /* apply order après avoir crée une div pour chaque element*/
+    }
 }
