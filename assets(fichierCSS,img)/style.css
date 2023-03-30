@@ -263,10 +263,23 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 /* FOOTER */
 .ftr {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
     background-color: #353535;
+}
+
+.ftr-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ac-i {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
 }
 
 .logo {
@@ -274,7 +287,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-size: 1.2em;
     color: #FFF;
     padding-left: 5%;
-    padding-top: 20px;
+    padding-top: 0;
+    flex-direction: row-reverse;
 }
 
 .ftr ul{
@@ -295,9 +309,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 6px;
 }
 
-.hide-md {
-    display: none;
-}
+
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
 /*header pages 2, 3, 4 et 5*/
@@ -488,15 +500,13 @@ padding-left: 40px;
 }
 
 /* FOOTER */
+
     .ftr {
         flex-direction: row;
         width: 100%;
-}
+        background-color: #008766;
+    }
 
-    .hide-lg {
-        display: none;
-}
- 
     ul {
         display: flex;
         flex-direction: row;
