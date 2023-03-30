@@ -4,7 +4,6 @@
 /*MISE EN PAGE*/
 .container {
     margin: auto;
-    /*min-width: px;*/
     padding-bottom: 10px;
 }
 
@@ -442,64 +441,6 @@ padding-left: 40px;
 
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 
-/*********************** Media queries tablette *********************/
-@media screen and (min-width: 769px) {  
-
-/* DEUXIEME SECTION PROCESS */
-.groups {
-    margin: auto;
-    flex-direction: row;
-}
-
-.instructions {
-    width: 280px;
-}
-
-/* TROISIEME SECTION PLACES */
-.cards {
-    /*margin: auto;*/
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 390px;
-}
-
-/* FOOTER */
-.ftr {
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.logo {
-    padding-right: 20px;
-}
-
-.ac-i {
-    flex-direction: row;
-    padding-top: 25px;
-    padding-right: 20px;
-}
-
-.ss-i {
-    flex-direction: row;
-    padding-top: 25px;
-    padding-right: 20px;
-}
-
-
-
-
-
-
-
-}
-
-
-
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 993px) {  
 /* HEADER */
@@ -592,3 +533,6 @@ padding-left: 40px;
         /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
         /* apply order après avoir crée une div pour chaque element*/   
 }
+
+
+    
