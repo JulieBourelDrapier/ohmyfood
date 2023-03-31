@@ -456,11 +456,27 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     /* DEUXIEME SECTION PROCESS */
     .groups {
         flex-direction: row;
+        flex-wrap: wrap;
         background-color: #008766;
+        width: 100%;
+        justify-content: center;
     }
-    
+
     .instructions {
-        width: 290px;
+        width: 260px;
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 6px;
+        align-items: center;
+    }
+
+    .number {
+        font-size: 0.9em;
+    }
+
+    .group i {
+        margin-right: -10px;
     }
     
     /* TROISIEME SECTION PLACES */
@@ -469,10 +485,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
+        gap: 40px;
     }
     
     .card {
-        width: 390px;
+        width: 320px;
     }
     
     /* FOOTER */
