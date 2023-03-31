@@ -451,7 +451,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 
 /*********************** Media queries desktop **********************/
-@media screen and (min-width: 993px) {  
+@media screen and (min-width: 1000px) {  
 /* HEADER */
     .hdr {
         width: 100%; 
