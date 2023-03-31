@@ -426,6 +426,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     font-size: 14px;
 }
 
+.overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 192px;
+}
+
 .price {
     padding-right: 20px;
     font-size: 15px;
@@ -457,7 +464,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     .groups {
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #008766;
         width: 100%;
         justify-content: center;
     }
