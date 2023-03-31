@@ -129,9 +129,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: #F6F6F6;
 }
 
-.colored-instructions {
-    background-color: #F5EDFF;
-} /*décrit comme faisant partie de la color-secondary sur la maquette mais ce n'est pas la même*/
 
 .group i {
     color: #7E7E7E;
