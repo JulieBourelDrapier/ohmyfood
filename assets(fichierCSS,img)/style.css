@@ -221,6 +221,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     /*font-weight: bold;*/
     width: 80px;
     height: 30px;
+    padding-top: 6px;
     padding-left: 10px;
     padding-right: 10px;
     border: #000;
@@ -228,6 +229,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     margin-left: -100px;
     margin-top: 15px;
     border-radius: 2px;
+    box-sizing: border-box;
 }
 
 .menu {
