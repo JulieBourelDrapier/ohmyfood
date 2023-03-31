@@ -301,6 +301,15 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 7px;
 }
 
+.ftr a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.ftr a:hover {
+    color:#9356DC;
+}
+
 
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
