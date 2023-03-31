@@ -3,13 +3,13 @@
 
 /*MISE EN PAGE*/
 .container {
-    margin: auto;
+    /*margin: auto;*/
     padding-bottom: 10px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: auto;
+    /*margin: auto;*/
 }
 
 /*HEADER*/
@@ -56,7 +56,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center; 
-    margin: auto;
+    /*margin: auto;*/
     width: 100%;
     background-color: #f6F6F6;
     padding-top: 40px;
@@ -94,7 +94,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .process {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /*margin: auto;*/
     width: 100%;
     padding-bottom: 70px;
 }
@@ -102,6 +102,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .process h2 {
     padding-top: 48px;
     padding-left: 6%;
+    padding-bottom: 10px;
 }
 
 .groups {
@@ -162,7 +163,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .places {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /*margin: auto;*/
     width: 100%;
     background-color: #F6F6F6;
     padding-top: 20px;
@@ -315,9 +316,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .menu1 a {
-text-decoration: none;
-color: #000;
-padding-left: 40px;
+    text-decoration: none;
+    color: #000;
+    padding-left: 40px;
 }
 
 .menu1 a:hover {
@@ -442,20 +443,24 @@ padding-left: 40px;
 @media screen and (min-width: 993px) {  
 /* HEADER */
     .hdr {
-        /*width: 100%; removed car déjà indiqué en mobile*/
+        width: 100%; 
     }
 
 /* DEUXIEME SECTION PROCESS */
 
     .process h2 {
-        padding-left: 200px;
+        padding-left: 9%;
     }
 
     .groups {
-        margin: auto;
+       /* margin: auto;*/
         flex-direction: row;
         /*width: 100%;*/
-        align-items: center;    
+        justify-content: center;    
+    }
+
+    .instructions {
+        width: 280px;
     }
 
 /* SECTION3 PLACES */
@@ -464,17 +469,15 @@ padding-left: 40px;
     }
     
     .places h2 {
-      padding-left: 200px;
+      padding-left: 9%;
     }
 
     .cards {
-        margin: auto;
-        width: 80%;
+        /*margin: auto;*/
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        /*gap: 90px;*/
     }
 
     .card {   
