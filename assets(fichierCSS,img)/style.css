@@ -462,7 +462,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     }
 
     .instructions {
-        width: 280px;
+        width: 290px; /*à 280px le rendu sur Mozilla n'est pas le même que sur la maquette */
     }
 
 /* SECTION3 PLACES */
