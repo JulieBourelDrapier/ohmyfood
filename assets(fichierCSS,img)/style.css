@@ -95,6 +95,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
+.cta {
+    width: 200px;
+}
+
+
 /* DEUXIEME SECTION PROCESS */
 .process {
     display: flex;
@@ -330,7 +335,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px; 
-    gap: 40%;
+    gap: 4%;
+    align-items: center;
+   
 }
 
 .menu1 img {
@@ -340,7 +347,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .menu1 a {
     text-decoration: none;
     color: #000;
-    padding-left: 40px;
 }
 
 .menu1 a:hover {
@@ -412,7 +418,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 95%;
+    width: 80%;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -423,6 +429,33 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 .courses h3 {
     font-size: 18px;
+}
+
+.command {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.checked:hover {
+    
+    padding: 10px 20px;
+    background-color: #99E2D0;
+    box-sizing: border-box;
+    color: #FFF;
+    border-radius: 0px 15px 15px 0px;
+    /*margin-left: -45px;*/
+    /*z-index: 999999;*/
+    /*transition: margin-left 2s;*/
+    transition: transform 5s ease-in-out .5s;
+}
+
+.checked {
+    color: transparent;
+}
+
+.checked i {
+    padding-top: 30px;
 }
 
 .d-p {
@@ -448,6 +481,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 20px;
     font-size: 15px;
     font-weight: bold;
+    z-index: 999999;
 }
 
 /* CTA = call to action btn*/
