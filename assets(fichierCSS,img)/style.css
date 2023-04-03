@@ -429,7 +429,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 192px;
+    width: 14%; /*200px*/
 }
 
 .price {
