@@ -56,8 +56,6 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center; 
-    /*margin: auto;*/
-    width: 100%;
     background-color: #f6F6F6;
     padding-top: 40px;
     padding-bottom: 50px; 
@@ -110,12 +108,14 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    width: 100%;
 }
 
 .group {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 }
 
 .instructions { 
@@ -125,7 +125,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 28px;
-    width: 320px;
+    width: 95%;
     gap: 30px;
     background-color: #F6F6F6;
 }
@@ -163,7 +163,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .places {
     display: flex;
     flex-direction: column;
-    /*margin: auto;*/
     width: 100%;
     background-color: #F6F6F6;
     padding-top: 20px;
@@ -189,7 +188,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: column;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px 20px 20px 20px;
-    width: 340px;
+    width: 100%; 
     background-color: #FFF; 
 }
 
@@ -462,18 +461,14 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
     /* DEUXIEME SECTION PROCESS */
     .groups {
-        flex-direction: row;
-        flex-wrap: wrap;
         width: 100%;
         justify-content: center;
+        padding-left: 2%;
     }
 
     .instructions {
-        width: 260px;
-        font-size: 14px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 6px;
+        width: 95%;
+        padding-left: 20px;
         align-items: center;
     }
 
@@ -486,17 +481,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     }
     
     /* TROISIEME SECTION PLACES */
-    .cards {
-        /*margin: auto;*/
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        gap: 40px;
-    }
     
     .card {
-        width: 320px;
+        width: 100%;
+    }
+
+    .card img {
+        object-fit: cover;
     }
     
     /* FOOTER */
@@ -534,15 +525,19 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 /* DEUXIEME SECTION PROCESS */
 
+    .process {
+        width: 100%;
+    }
     .process h2 {
-        padding-left: 9%;
+        padding-left: 2%;
     }
 
     .groups {
        /* margin: auto;*/
         flex-direction: row;
-        /*width: 100%;*/
-        justify-content: center;    
+        width: 100%;
+        padding-left: 2%;
+       justify-content: center;    
     }
 
     .instructions {
@@ -555,7 +550,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     }
     
     .places h2 {
-      padding-left: 9%;
+      padding-left: 2%;
     }
 
     .cards {
@@ -567,7 +562,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     }
 
     .card {   
-        width: 490px; /* + gd en version desktop */
+        width: 35%; /* + gd en version desktop */
         margin-bottom: 30px;
     }
 
