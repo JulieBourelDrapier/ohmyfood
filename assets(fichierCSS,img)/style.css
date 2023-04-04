@@ -268,12 +268,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .tolike i {
     padding-top: 20px;
     padding-right: 5%;
-    font-size: 1.5em;
-    transition: color .13s;
+    font-size: 1.5em;    
 }
 
-.tolike i:hover {
-    background-color : deeppink;
+.full-heart {
+    color: deeppink;
 }
 
 .zone {
