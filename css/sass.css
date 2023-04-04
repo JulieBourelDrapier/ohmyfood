@@ -6,24 +6,6 @@
 /* = vert d'eau*/
 /* je remarque que je peux trouver un moyen de réunir*/
 /*les éléments de couleur grise : #F6F6F6; #353535; #EAEAEA; #D2D2D2;*/
-.btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
-  background: linear-gradient(to left, #9356DC, #FF79DA);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 25px;
-  border: none;
-  padding: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 400ms;
-}
-.btn:hover {
-  transform: scale(1.15);
-}
+
 
 /*# sourceMappingURL=sass.css.map */
