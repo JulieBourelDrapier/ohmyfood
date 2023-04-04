@@ -508,6 +508,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
+.btn-cta {
+    justify-content: center;
+    width: 300px;
+}
+
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 
 /*********************** Media queries tablette *********************/
