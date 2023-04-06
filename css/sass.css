@@ -3,7 +3,7 @@
 /*variables scss*/
 /*utilisation du nesting*/
 .btn {
-  background: linear-gradient(to right, #9356DC, #FF79DA);
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
   color: #FFF;
   opacity: 1;
   transition: opacity 0.3s;

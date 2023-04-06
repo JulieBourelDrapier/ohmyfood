@@ -13,7 +13,7 @@ $text-dark-grey: #353535;
 
 /*utilisation du nesting*/
 .btn {
-    background: linear-gradient(to right,$couleur-primaire, $couleur-secondaire);
+    background: linear-gradient(360deg,$couleur-primaire, $couleur-secondaire);
     color: #FFF;
     opacity: 1;
     transition: opacity .3s;
