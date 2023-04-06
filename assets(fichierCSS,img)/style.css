@@ -18,9 +18,10 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px; 
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #F6F6F6;
     box-shadow: 6px 6px 25px rgba(198, 194, 194, 0.824);
 }
 
@@ -30,13 +31,14 @@ body {
 
 
 
-/*topnav*/
+/*topnav = endroit où est localisé le site */
 .topnav {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    background-color: #EAEAEA;  
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #EAEAEA; 
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -51,14 +53,13 @@ body {
 }
 
 
-
-
 /* PREMIERE SECTION RESERVATIONS*/
 .reservations {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center; 
+    justify-content: center;
     background-color: #f6F6F6;
     padding-top: 40px;
     padding-bottom: 50px; 
@@ -77,7 +78,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 12%;
 }
 
-.btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
+.btn { 
     /*background: linear-gradient(to left, #9356DC,#FF79DA);mis dans sass.scss*/
     /*color: #FFF;idem*/
     font-size: 16px;
@@ -98,16 +99,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     /*box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25); idem*/
 }
 
-.cta {
-    width: 200px;
-}
 
 
 /* DEUXIEME SECTION PROCESS */
 .process {
     display: flex;
     flex-direction: column;
-    /*margin: auto;*/
     width: 100%;
     padding-bottom: 70px;
 }
@@ -121,8 +118,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .groups {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
+    gap: 30px;
     width: 100%;
 }
 
@@ -131,6 +128,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: row;
     align-items: center;
     width: 100%;
+    justify-content:center ;
 }
 
 .instructions { 
@@ -144,7 +142,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     gap: 30px;
     background-color: #F6F6F6;
 }
-
 
 .group i {
     color: #7E7E7E;
@@ -208,12 +205,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .card a {
-    text-decoration: none;
-    color: #000;
+    /*text-decoration: none;mis dans sass.scss*/
+    /*color: #000;idem*/
 }
 
 .card a:hover {
-    color: #9556DC; 
+    /*color: #9556DC; idem*/
 }
 
 .card img {
@@ -233,7 +230,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background: #99E2D0; 
     color: #008766;
     font-size: 14px;
-    /*font-weight: bold;*/
     width: 80px;
     height: 30px;
     padding-top: 6px;
@@ -587,8 +583,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
        /* margin: auto;*/
         flex-direction: row;
         width: 100%;
-        padding-left: 2%;
-       justify-content: center;    
+        padding-left: 0;
     }
 
     .instructions {
