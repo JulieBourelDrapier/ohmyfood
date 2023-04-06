@@ -296,15 +296,15 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .ac-i {
-    /*display: flex; mis dans sass.scss*/
-    /*flex-direction: column;idem*/
-    /*gap: 8px; idem*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .ss-i {
-    /*display: flex;mis dans sass.scss*/
-    /*flex-direction: column;idem*/
-    /*gap: 8px;idem*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;idem
 }
 
 .rotated i {

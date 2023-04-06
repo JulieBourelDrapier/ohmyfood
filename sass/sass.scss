@@ -64,17 +64,3 @@ $red : red;
     }
 }
 
-/* placeholder */
-%flex-gap {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.ac-i {
-    @extend %flex-gap;
-}
-
-.ss-i {
-    @extend %flex-gap;
-}
