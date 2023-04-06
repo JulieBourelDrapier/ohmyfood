@@ -1,13 +1,3 @@
-/*les couleurs qui se répètent*/
-/*Les VARIABLES permettent de déf 1couleur et de la réf dès q besoin*/
-$color-primary: #9356DC; /* = violet*/
-$color-secondary: #FF79DA; /* = rose*/
-$color-tertiary: #99E2D0; /* = vert d'eau*/
-
-/* je remarque que je peux trouver un moyen de réunir*/
-/*les éléments de couleur grise : #F6F6F6; #353535; #EAEAEA; #D2D2D2;*/
-
-
 @charset "UTF-8";
 /*les couleurs qui se répètent*/
 /*variables scss*/
@@ -20,7 +10,6 @@ $fond-light-grey: #f6F6F6;
 
 $text-dark-grey: #353535;
 
-$red : red;
 
 /*utilisation du nesting*/
 .btn {
@@ -44,14 +33,6 @@ $red : red;
     }
 }
 
-.ftr a {
-    color: #FFF;
-    text-decoration: none;
-
-    &:hover {
-        color: $couleur-primaire;
-    }
-}
 
 /* poursuite du nesting p2 et +*/
 
