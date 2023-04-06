@@ -52,3 +52,14 @@ $red : red;
         color: $couleur-primaire;
     }
 }
+
+/* poursuite du nesting p2 et +*/
+
+.menu1 a /*effet sur la flèche*/ {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        color: $couleur-primaire;
+    }
+}

@@ -36,4 +36,13 @@
   color: #9356DC;
 }
 
+/* poursuite du nesting p2 et +*/
+.menu1 a {
+  color: #000;
+  text-decoration: none;
+}
+.menu1 a:hover {
+  color: #9356DC;
+}
+
 /*# sourceMappingURL=sass.css.map */

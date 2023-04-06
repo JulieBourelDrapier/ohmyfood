@@ -336,7 +336,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-bottom: 30px; 
     gap: 4%;
     align-items: center;
-   
 }
 
 .menu1 img {
@@ -344,12 +343,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .menu1 a {
-    text-decoration: none;
-    color: #000;
+    /*text-decoration: none;mis dans sass.scss*/
+    /*color: #000; idem*/
 }
 
 .menu1 a:hover {
-    color: #9556DC;
+    /*color: #9556DC;idem*/
 }
 
 .hdr-icon {
@@ -497,7 +496,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 
 .btn-cta {
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 300px;
 }
 
