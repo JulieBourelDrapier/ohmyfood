@@ -1,5 +1,23 @@
 @charset "UTF-8";
 /*les couleurs qui se répètent*/
-
+/*Les VARIABLES permettent de déf 1couleur et de la réf dès q besoin*/
+/* = violet*/
+/* = rose*/
+/* = vert d'eau*/
+/* je remarque que je peux trouver un moyen de réunir*/
+/*les éléments de couleur grise : #F6F6F6; #353535; #EAEAEA; #D2D2D2;*/
+/*les couleurs qui se répètent*/
+/*variables scss*/
+/*nesting*/
+.btn {
+  background: linear-gradient(to right, #9356DC, red);
+  color: #FFF;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.btn:hover {
+  opacity: 0.5;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+}
 
 /*# sourceMappingURL=sass.css.map */

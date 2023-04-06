@@ -78,8 +78,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
-    background: linear-gradient(to left, #9356DC,#FF79DA);
-    color: white;
+    /*background: linear-gradient(to left, #9356DC,#FF79DA);mis dans sass.scss*/
+    /*color: #FFF;idem*/
     font-size: 16px;
     font-weight: bold;
     border-radius: 25px;
@@ -89,13 +89,13 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 20px;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
-    opacity: 1;
-    transition: opacity .3s;
+    /*opacity: 1;idem*/
+    /*transition: opacity .3s;idem*/
 }
 
 .btn:hover {
-    opacity: .5;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+    /*opacity: .5;mis dans sass.scss*/
+    /*box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25); idem*/
 }
 
 .cta {
@@ -230,7 +230,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .btn-new {
-    background: #99E2D0;
+    background: #99E2D0; 
     color: #008766;
     font-size: 14px;
     /*font-weight: bold;*/
@@ -328,6 +328,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .ftr a:hover {
     color:#9356DC;
 }
+
 
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
@@ -440,7 +441,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 
 .checked:hover {
-    
     padding: 10px 20px;
     background-color: #99E2D0;
     box-sizing: border-box;
@@ -488,8 +488,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 /* CTA = call to action btn*/
 .btn { /*SASS faire le lien entre ce type de btn et les coeurs qui ont le même dégradé*/
-    background: linear-gradient(to right, #9356DC,#FF79DA);
-    color: white;
     font-size: 16px;
     font-weight: bold;
     border-radius: 25px;
@@ -499,14 +497,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-right: 50px;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
-    opacity: 1;
-    transition: opacity .3s;
 }
 
-.btn:hover {
-    opacity: .5;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
-}
 
 .btn-cta {
     justify-content: center;
