@@ -21,6 +21,16 @@
   color: #9356DC;
 }
 
+.tolike i {
+  color: black;
+  opacity: 0.1;
+  transition: opacity 0.3s;
+}
+.tolike i:hover {
+  opacity: 1;
+  color: deeppink;
+}
+
 /* poursuite du nesting p2 et +*/
 .menu1 a {
   color: #000;

@@ -33,6 +33,17 @@ $text-dark-grey: #353535;
     }
 }
 
+.tolike i {
+    color: black;
+    opacity: 0.1;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: 1;
+        color: deeppink;
+    }
+}
+
 
 /* poursuite du nesting p2 et +*/
 
