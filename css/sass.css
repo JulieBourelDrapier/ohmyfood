@@ -10,7 +10,7 @@
 /*variables scss*/
 /*nesting*/
 .btn {
-  background: linear-gradient(to right, #9356DC, red);
+  background: linear-gradient(to right, #9356DC, #FF79DA);
   color: #FFF;
   opacity: 1;
   transition: opacity 0.3s;

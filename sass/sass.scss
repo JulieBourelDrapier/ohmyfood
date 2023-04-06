@@ -19,7 +19,7 @@ $couleur-tertiaire: #99E2D0;
 
 
 .btn {
-    background: linear-gradient(to right, #9356DC,red);
+    background: linear-gradient(to right,$couleur-primaire, $couleur-secondaire);
     color: #FFF;
     opacity: 1;
     transition: opacity .3s;
