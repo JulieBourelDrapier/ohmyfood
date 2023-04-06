@@ -21,10 +21,18 @@
 }
 
 .card a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 .card a:hover {
+  color: #9356DC;
+}
+
+.ftr a {
+  color: #FFF;
+  text-decoration: none;
+}
+.ftr a:hover {
   color: #9356DC;
 }
 

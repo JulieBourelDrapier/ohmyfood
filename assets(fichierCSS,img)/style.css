@@ -317,12 +317,12 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .ftr a {
-    color: #FFF;
-    text-decoration: none;
+    /*color: #FFF; mis ds sass.scss*/
+    /*text-decoration: none;idem*/
 }
 
 .ftr a:hover {
-    color:#9356DC;
+    /*color:#9356DC;idem*/
 }
 
 
