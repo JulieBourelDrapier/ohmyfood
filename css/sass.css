@@ -24,7 +24,7 @@
 .tolike i {
   color: black;
   opacity: 0.1;
-  transition: opacity 0.3s;
+  transition: opacity 0.9s;
 }
 .tolike i:hover {
   opacity: 1;
