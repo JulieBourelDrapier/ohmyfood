@@ -34,6 +34,8 @@ $text-dark-grey: #353535;
     }
 }
 
+/* heart homepage/cards */
+
 .tolike i {
     color: grey;
     opacity: 0.1;
@@ -45,24 +47,7 @@ $text-dark-grey: #353535;
     }
 }
 
-@keyframes fulfilledheart {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  70% {
-    margin-left: 90%;
-    width: 150%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
+/* heart p.2 et + */
 .presentation i {
     color: grey;
     opacity: 0.1;
