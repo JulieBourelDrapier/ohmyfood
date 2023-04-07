@@ -23,15 +23,14 @@
 }
 
 /* heart homepage/cards */
-.tolike i {
-  color: grey;
-  opacity: 0.1;
-  transition: opacity 3s;
+.emptyheart {
+  position: absolute;
 }
-.tolike i:hover {
-  opacity: 1;
-  color: #9356DC;
+
+.fullheart {
+  color:  #9356DC;
 }
+
 
 /* heart p.2 et + */
 .presentation i {

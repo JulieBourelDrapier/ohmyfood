@@ -51,6 +51,7 @@ body {
     100% {
         transform: translateY(-20px)
     }
+    
 }
 
 /*Mise en page bis*/
@@ -483,7 +484,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     color: #FFF;
     border-radius: 0px 15px 15px 0px;
     /*margin-left: -45px;*/
-    /*z-index: 999999;*/
+    z-index: 999999;
     /*transition: margin-left 2s;*/
     transition: transform 5s ease-in-out .5s;
 }
