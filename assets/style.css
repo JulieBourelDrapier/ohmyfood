@@ -535,7 +535,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 
