@@ -22,6 +22,7 @@
   color: #9356DC;
 }
 
+/* heart homepage/cards */
 .tolike i {
   color: grey;
   opacity: 0.1;
@@ -32,20 +33,7 @@
   color: #9356DC;
 }
 
-@keyframes fulfilledheart {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  70% {
-    margin-left: 90%;
-    width: 150%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
+/* heart p.2 et + */
 .presentation i {
   color: grey;
   opacity: 0.1;
