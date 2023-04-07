@@ -23,7 +23,7 @@
 }
 
 .tolike i {
-  color: #red;
+  color: grey;
   opacity: 0.1;
   transition: opacity 3s;
 }
@@ -33,7 +33,7 @@
 }
 
 .presentation i {
-  color: #FF79DA;
+  color: grey;
   opacity: 0.1;
   transition: opacity 3s;
 }
