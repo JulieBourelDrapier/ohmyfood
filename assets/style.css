@@ -342,6 +342,26 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: transparent;
 }
 
+.heart:hover > .empty-heart {
+    display: none;
+}
+
+.heart:hover > .full-heart {
+    display: block;
+}
+
+.heart:hover > .full-heart i {
+    opacity: 1;
+}
+
+.full-heart {
+    display: none;
+}
+
+.full-heart i {
+    opacity: 0;
+    color:#9356DC;
+}
 
 
 .zone {
