@@ -450,10 +450,6 @@ h1 {
     /*gap: 35%;*/
 }
 
-.pages-hdr img {
-    object-fit: cover;
-}
-
 .pages-hdr i {/* trouver un moyen pour le placer correctement*/
     font-size: 1.5em;
 }
@@ -461,7 +457,7 @@ h1 {
 /* bannière */
 .banner img {
     width: 100%;
-    /*object-fit: cover;*/
+    object-fit: cover;
 }
 
 /* section où sont présentés les menus*/
@@ -507,7 +503,7 @@ h1 {
     gap: 20px;
     width: 80%;
     padding-left: 5%;
-    background-color: #008766;
+    background-color: #F6F6F6;
 }
 
 .sctn h2 {
@@ -546,14 +542,16 @@ h1 {
 }
 
 .card-bis {
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
     overflow: hidden;
     text-decoration: none;
-    margin: 60px;
     color: #000;
+    background-color: #FFF;
+    margin: 20px;
 }
 
 .card-text {
@@ -563,11 +561,11 @@ h1 {
 .card-text h3 {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 18px;
 }
 
 .card-check {
-    background-color: green;
+    background-color:#99E2D0;
     padding: 65px;
     color: white;
     font-size: 3rem;
@@ -593,11 +591,11 @@ h1 {
 }
 
 /*ellipsis*/
-.overflow-ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 14%; /*200px*/
+/*.overflow-ellipsis {*/
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*width: 14%; /*200px*/
 }
 
 /* CTA = call to action btn*/
