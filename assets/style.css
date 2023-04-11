@@ -500,14 +500,13 @@ h1 {
 }
 
 .menu {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     gap: 20px;
     width: 80%;
     padding: 15px;
-    /*background-color: #F6F6F6;*/
+    background-color: #F6F6F6;
 }
 
 .menu h2 {
@@ -539,28 +538,28 @@ h1 {
 
 /*plats*/
 .second:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 .second:nth-child(2){
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 .second:nth-child(3){
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 /*desserts*/
 .third:nth-child(1){
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .third:nth-child(2){
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .third:nth-child(3){
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 
