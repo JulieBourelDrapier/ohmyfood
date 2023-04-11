@@ -520,21 +520,49 @@ h1 {
 
 .menu__item {
     width: 100%;
-    animation: fadeIn 0.5s ease-in-out forwards;
+    animation: fadeIn 3s ease-in-out forwards;
     opacity: 0;
 }
 
-.menu__item:nth-child(1){
+/* entrées*/
+.first:nth-child(1){
     animation-delay: 0.5s;
 }
 
-.menu__item:nth-child(2){
+.first:nth-child(2){
+    animation-delay: 0.5s;
+}
+
+.first:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+/*plats*/
+.second:nth-child(1){
     animation-delay: 1s;
 }
 
-.menu__item:nth-child(3){
+.second:nth-child(2){
+    animation-delay: 1s;
+}
+
+.second:nth-child(3){
+    animation-delay: 1s;
+}
+
+/*desserts*/
+.third:nth-child(1){
     animation-delay: 1.5s;
 }
+
+.third:nth-child(2){
+    animation-delay: 1.5s;
+}
+
+.third:nth-child(3){
+    animation-delay: 1.5s;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -548,18 +576,18 @@ h1 {
 .card-bis {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;/*gère l'espace entre le menu et le check*/
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     color: #000;
     background-color: #FFF;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .card-text {
-    padding: 30px;
+    padding-left: 10px;
 }
 
 .card-text h3 {
@@ -570,9 +598,9 @@ h1 {
 
 .card-check {
     background-color:#99E2D0;
-    padding: 65px;
+    padding: 30px;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-right: -200px;
     transition: 0.3s;
 }
