@@ -24,11 +24,11 @@
 }
 
 /* poursuite du nesting p2 et +*/
-.menu1 a {
+.pages-hdr a {
   color: #000;
   text-decoration: none;
 }
-.menu1 a:hover {
+.pages-hdr a:hover {
   color: #000;
 }
 

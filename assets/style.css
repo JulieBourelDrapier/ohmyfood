@@ -2,10 +2,14 @@
 /*MISE EN PAGE*/
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
 }
 
-/*LOADER*/
+.container {
+    margin: auto;
+    /*padding-bottom: 10px;*/
+}
+
+/***** LOADER *****/
 .loader {
     width: 100%;
     height: 100%;
@@ -88,10 +92,6 @@ body {
     }
 }
 
-/*Mise en page bis*/
-.container {
-    padding-bottom: 10px;
-}
 
 /*HEADER*/
 .hdr {
@@ -124,7 +124,7 @@ body {
 
 .icon {
     padding-right: 15px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .localisation {
@@ -143,7 +143,7 @@ body {
     padding-bottom: 50px; 
 }
 
-h1 { /*pour rappel, les titres sont bold par défaut*/
+h1 {
     font-size: 24px;
     color: #000;
 }
@@ -151,9 +151,11 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .reservations p {
     font-size: 18px;
     color: #353535;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 27px;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .btn { 
@@ -187,7 +189,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 .process h2 {
     padding-top: 48px;
-    padding-left: 6%;
+    padding-left: 50px;
     padding-bottom: 10px;
 }
 
@@ -195,7 +197,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -203,8 +205,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    justify-content:center ;
+    justify-content:center;
+    width: 95%;
+    padding-bottom: 25px;
 }
 
 .instructions { 
@@ -215,7 +218,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     border-radius: 15px;
     padding: 28px;
     width: 95%;
-    gap: 30px;
+    gap: 40px;
     background-color: #F6F6F6;
 }
 
@@ -234,7 +237,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     border-radius: 30px;
     width: 30px;
     height: 30px;
-    background-color: #9556DC; /*color-primary*/
+    background-color: #9556DC;
     color: #FFF;
     padding-left: 10px;
     padding-top: 4px;
@@ -268,15 +271,16 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    justify-content: center;
     align-items: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    width: 100%;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px 20px 20px 20px;
-    width: 100%; 
     background-color: #FFF; 
 }
 
@@ -290,9 +294,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .card img {
+    width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    width: 100%;
     height: 170px;
     background-position: center;
 }
@@ -342,7 +346,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: transparent;
 }
 
-
 /*hover*/  
 .heart:hover > .empty-heart {
     display: none;
@@ -378,7 +381,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     }
 }
 
-
 .zone {
     padding-left: 2%;
     padding-bottom: 4%;
@@ -413,7 +415,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .ss-i {
     display: flex;
     flex-direction: column;
-    gap: 8px;idem
+    gap: 8px;
 }
 
 .rotated i {
@@ -438,30 +440,21 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
 /*header pages 2, 3, 4 et 5*/
-.menu1 {
+.pages-hdr {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px; 
-    gap: 4%;
-    align-items: center;
+    /*gap: 35%;*/
 }
 
-.menu1 img {
-    align-items: center;
+.pages-hdr img {
+    object-fit: cover;
 }
 
-.menu1 a {
-    /*text-decoration: none;mis dans sass.scss*/
-    /*color: #000; idem*/
-}
-
-.menu1 a:hover {
-    /*color: #9556DC;idem*/
-}
-
-.hdr-icon {
-    padding-left: 8%;
+.pages-hdr i {/* trouver un moyen pour le placer correctement*/
     font-size: 1.5em;
 }
 
@@ -471,7 +464,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     /*object-fit: cover;*/
 }
 
-/* section ou je présente les menus*/
+/* section où sont présentés les menus*/
 
 .main-sctn {
     width: 100%;
@@ -512,8 +505,9 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 80%;
     padding-left: 5%;
+    background-color: #008766;
 }
 
 .sctn h2 {
@@ -522,6 +516,33 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     border-bottom: 3px solid #99E2D0;
     padding-bottom: 20px;
     width: 40px;
+}
+
+.menu__item {
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.menu__item:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+.menu__item:nth-child(2){
+    animation-delay: 1s;
+}
+
+.menu__item:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .courses {
