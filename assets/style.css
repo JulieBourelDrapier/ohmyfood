@@ -342,6 +342,8 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     background-color: transparent;
 }
 
+
+/*hover*/  
 .heart:hover > .empty-heart {
     display: none;
 }
@@ -361,7 +363,21 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 .full-heart i {
     opacity: 0;
     color:#9356DC;
+    animation: linear-gradient 1s ease-in-out; 
 }
+
+@keyframes linear-gradient {
+    0% {
+        color:#9356DC;
+    }
+    50% {
+        color:#FF79DA;
+    }
+    100% {
+        color:#9356DC; 
+    }
+}
+
 
 .zone {
     padding-left: 2%;

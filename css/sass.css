@@ -23,17 +23,6 @@
   color: #000;
 }
 
-/* heart p.2 et + */
-.presentation i {
-  color: grey;
-  opacity: 0.1;
-  transition: opacity 3s;
-}
-.presentation i:hover {
-  opacity: 1;
-  color: #9356DC;
-}
-
 /* poursuite du nesting p2 et +*/
 .menu1 a {
   color: #000;
