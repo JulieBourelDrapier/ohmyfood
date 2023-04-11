@@ -36,19 +36,6 @@ $text-dark-grey: #353535;
 }
 
 
-
-/* heart p.2 et + */
-.presentation i {
-    color: grey;
-    opacity: 0.1;
-    transition: opacity 3s;
-
-    &:hover {
-        opacity: 1;
-        color: $couleur-primaire;
-    }
-}
-
 /* poursuite du nesting p2 et +*/
 
 .menu1 a /*effet sur la flèche*/ {
