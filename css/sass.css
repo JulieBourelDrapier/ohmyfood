@@ -22,16 +22,6 @@
   color: #9356DC;
 }
 
-/* heart homepage/cards */
-.emptyheart {
-  position: absolute;
-}
-
-.fullheart {
-  color:  #9356DC;
-}
-
-
 /* heart p.2 et + */
 .presentation i {
   color: grey;
