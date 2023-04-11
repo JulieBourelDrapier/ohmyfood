@@ -334,38 +334,15 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 /* heart homepage/cards */
-.emptyheart {
-    position: absolute;
-  }
 
-  
-  .tolike i {
-    color: grey;
-    opacity: 0.1;
-    transition: opacity 3s;
-  }
-  .tolike i:hover {
-    opacity: 1;
-    color: #9356DC;
-  }
-  
-
-.tolike {
-    display: flex;
-    flex-direction: row;  
-    width: 100%;
-    justify-content: space-between;
+.heart {
+    font-size: 2rem;
+    width: 32px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-.tolike h3{
-    padding-left: 2%;
-    margin-bottom: 2%;
-}
 
-.tolike i {
-    font-size: 1.5em; 
-    padding: 20px;
-}
 
 .zone {
     padding-left: 2%;
