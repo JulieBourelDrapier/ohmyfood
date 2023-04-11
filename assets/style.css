@@ -1,12 +1,9 @@
 /* Projet 4 Ohmyfood nouvelle version */
-
-
 /*MISE EN PAGE*/
 body {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
-
 
 /*LOADER*/
 .loader {
@@ -113,8 +110,6 @@ body {
     height: 30px;
 }
 
-
-
 /*topnav = endroit où est localisé le site */
 .topnav {
     display: flex;
@@ -135,7 +130,6 @@ body {
 .localisation {
     font-size: 1.1em;
 }
-
 
 /* PREMIERE SECTION RESERVATIONS*/
 .reservations {
@@ -182,8 +176,6 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     /*opacity: .5;mis dans sass.scss*/
     /*box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25); idem*/
 }
-
-
 
 /* DEUXIEME SECTION PROCESS */
 .process {
@@ -294,7 +286,7 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 .card a:hover {
-    /*color: #9556DC; idem*/
+    /*color: #000; idem*/
 }
 
 .card img {
@@ -334,9 +326,17 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
 }
 
 /* heart homepage/cards */
+.tolike {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2%;
+}
 
 .heart {
-    font-size: 2rem;
+    padding-top: 25px;
+    padding-right: 25px;
+    font-size: 1.5rem;
     width: 32px;
     cursor: pointer;
     background-color: transparent;
@@ -363,10 +363,10 @@ h1 { /*pour rappel, les titres sont bold par défaut*/
     color:#9356DC;
 }
 
-
 .zone {
     padding-left: 2%;
     padding-bottom: 4%;
+    margin-top: -12px;
 }
 
 /* FOOTER */

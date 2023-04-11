@@ -14,12 +14,13 @@
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
+/*lien des cards*/
 .card a {
   color: #000;
   text-decoration: none;
 }
 .card a:hover {
-  color: #9356DC;
+  color: #000;
 }
 
 /* heart p.2 et + */
@@ -39,7 +40,7 @@
   text-decoration: none;
 }
 .menu1 a:hover {
-  color: #9356DC;
+  color: #000;
 }
 
 /*# sourceMappingURL=sass.css.map */
