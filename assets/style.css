@@ -607,6 +607,8 @@ h1 {
 
 .price {
     font-weight: bold; 
+    display: flex;
+    justify-content: flex-end;
     padding-left: -10%;
 }
 
