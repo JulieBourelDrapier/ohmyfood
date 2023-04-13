@@ -97,20 +97,19 @@ body {
 .hdr {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     justify-content: center;
+    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px; 
     border-bottom: 4px solid #dcdada;
-    box-shadow: 6px 6px 25px rgba(198, 194, 194, 0.824);
 }
 
 .hdr img {
     height: 30px;
 }
 
-/*topnav = endroit où est localisé le site */
+/*TOPNAV = endroit où est localisé le site */
 .topnav {
     display: flex;
     flex-direction: row;
@@ -126,44 +125,52 @@ body {
 }
 
 .icon {
-    padding-right: 15px;   
+    padding-right: 15px; 
+    font-size: 1.1em;  
 }
 
-/* PREMIERE SECTION RESERVATIONS*/
+/* PREMIÈRE SECTION RÉSERVATIONS*/
 .reservations {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    align-items: center; 
-    justify-content: center;
     background-color: #f6F6F6;
     padding-top: 40px;
-    padding-bottom: 50px; 
+    padding-bottom: 60px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #000;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
 }
 
 .reservations p {
-    font-size: 18px;
+    font-size: 1.1em;
     color: #353535;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 27px;
-    padding-left: 50px;
-    padding-right: 50px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    padding-left: 20px;
+    padding-bottom: 27px;
 }
 
 .btn { 
     /*background: linear-gradient(to left, #9356DC,#FF79DA);mis dans sass.scss*/
     /*color: #FFF;idem*/
-    font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 1em;
     border-radius: 25px;
     border: none;
-    padding: 16px;
+    padding: 14px;
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
@@ -177,17 +184,18 @@ h1 {
     /*box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25); idem*/
 }
 
-/* DEUXIEME SECTION PROCESS */
+/* DEUXIÈME SECTION PROCESS */
 .process {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .process h2 {
+    font-weight: 700;
     padding-top: 48px;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-bottom: 10px;
 }
 
@@ -209,14 +217,16 @@ h1 {
 }
 
 .instructions { 
+    font-weight: 500;
     display: flex;
     flex-direction: row;
+    align-items: center;
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 28px;
     width: 95%;
-    gap: 40px;
+    gap: 20px;
     background-color: #F6F6F6;
 }
 
