@@ -184,7 +184,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 100%;
 }
 
@@ -460,6 +459,7 @@ h1 {
     width: 100%;
     object-fit: cover;
     padding-bottom: 30px;
+    height: 400px;
 }
 
 /* section où sont présentés les menus*/
@@ -600,10 +600,14 @@ h1 {
 .card-text p {
     margin:0;
     padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .price {
-    font-weight: bold;
+    font-weight: bold; 
+    padding-left: -10%;
 }
 
 .card-check {
@@ -655,9 +659,9 @@ h1 {
 
     /* DEUXIEME SECTION PROCESS */
     .groups {
-        width: 100%;
-        justify-content: center;
-        padding-left: 2%;
+        /*width: 100%;*/
+        /*justify-content: center;*/
+        /*padding-left: 2%;*/
     }
 
     .instructions {
@@ -683,6 +687,12 @@ h1 {
     .card img {
         object-fit: cover;
     }
+    /*pages menu : price*/
+    .price {
+        padding-left: 35%;
+        padding-right: 5px;
+    }
+    
     
     /* FOOTER */
     .ftr {
@@ -711,30 +721,36 @@ h1 {
 
 
 /*********************** Media queries desktop **********************/
-@media screen and (min-width: 1000px) {  
+@media screen and (min-width: 999px) {  
 /* HEADER */
     .hdr {
         width: 100%; 
     }
 
-/* DEUXIEME SECTION PROCESS */
+/* PREMIÈRE SECTION RESERVATION*/
+.reservations {
+    padding-bottom: 30px;
+}
 
+/* DEUXIEME SECTION PROCESS */
     .process {
         width: 100%;
     }
     .process h2 {
         padding-left: 2%;
+        padding-top: 40px;
     }
 
     .groups {
-       /* margin: auto;*/
+        margin: auto;
         flex-direction: row;
         width: 100%;
-        padding-left: 0;
     }
 
     .instructions {
-        width: 290px; /*à 280px le rendu sur Mozilla n'est pas le même que sur la maquette */
+        width: 320px;
+        padding-right: 15px;
+
     }
 
 /* SECTION3 PLACES */
@@ -763,6 +779,11 @@ h1 {
         height: 230px; /* + gd en version desktop */
     }
 
+    /*pages menu : price*/
+    .price {
+        padding-left: 55%;
+        padding-right: 10px;
+    }
 /* FOOTER */
 
     .ftr {
