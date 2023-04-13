@@ -259,20 +259,23 @@ h1 {
     font-weight: bold;
 }
 
-/* SECTION3 PLACES */ 
+/* TOISIÈME SECTION PLACES */ 
 .places {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     background-color: #F6F6F6;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 70px;
 }
 
 .places h2 {
+    font-weight: 700;
+    font-size: 1.5em;
     padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 6%;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
  
 .cards {
