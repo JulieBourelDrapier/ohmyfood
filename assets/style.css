@@ -267,7 +267,7 @@ h1 {
     width: 100%;
     background-color: #F6F6F6;
     padding-top: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
 }
 
 .places h2 {
@@ -291,7 +291,6 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 95%;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     border-radius: 20px 20px 20px 20px;
     background-color: #FFF; 
 }
@@ -346,11 +345,11 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 2%;
+    padding-left: 10px;
 }
 
 .heart {
-    padding-top: 25px;
+    padding-top: 20px;
     padding-right: 25px;
     font-size: 1.5rem;
     width: 32px;
@@ -394,8 +393,8 @@ h1 {
 }
 
 .zone {
-    padding-left: 2%;
-    padding-bottom: 4%;
+    padding-left: 10px;
+    padding-bottom: 10px;
     margin-top: -12px;
 }
 
@@ -418,13 +417,7 @@ h1 {
     padding-bottom: 10px;
 }
 
-.ac-i {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.ss-i {
+.ac-i, .ss-i {
     display: flex;
     flex-direction: column;
     gap: 8px;
