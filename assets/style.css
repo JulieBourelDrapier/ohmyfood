@@ -100,9 +100,9 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    border-bottom: 1px solid #F6F6F6;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    border-bottom: 4px solid #dcdada;
     box-shadow: 6px 6px 25px rgba(198, 194, 194, 0.824);
 }
 
@@ -120,15 +120,13 @@ body {
     background-color: #EAEAEA; 
     padding-top: 15px;
     padding-bottom: 15px;
+    color: #353535;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .icon {
-    padding-right: 15px;
-    font-size: 1.1em;
-}
-
-.localisation {
-    font-size: 1.1em;
+    padding-right: 15px;   
 }
 
 /* PREMIERE SECTION RESERVATIONS*/
