@@ -9,8 +9,8 @@ body {
     /*padding-bottom: 10px;*/
 }
 
-/***** LOADER *****/
-.loader {
+/***** LOADER voir sass.scss*****/
+/*.loader {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -22,8 +22,8 @@ body {
     left: 0;
     display: flex;
     justify-content: center; /*centré sur X*/
-    align-items: center;  /*centré sur Y*/
-    overflow: hidden;
+    /*align-items: center;  /*centré sur Y*/
+    /*overflow: hidden;
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3000ms;
 }
@@ -91,7 +91,7 @@ body {
         width: 0;
     }
 }
-
+*/
 
 /*HEADER*/
 .hdr {
@@ -124,13 +124,13 @@ body {
     font-weight: 500;
 }
 
-.icon {
+.topnav__i {
     padding-right: 15px; 
     font-size: 1.1em;  
 }
 
 /* PREMIÈRE SECTION RÉSERVATIONS*/
-.reservations {
+.sctn-reservations {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -152,7 +152,7 @@ h1 {
     font-weight: 700;
 }
 
-.reservations p {
+.reservations-content {
     font-size: 1.1em;
     color: #353535;
     padding-bottom: 27px;
@@ -166,7 +166,7 @@ h1 {
 /*les caractéristiques de btn sont sur sass*/
 
 /* DEUXIÈME SECTION PROCESS */
-.process {
+.sctn-process {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,20 +175,26 @@ h1 {
 }
 
 /*h2*/
-.process h2 {
-    font-weight: 700;
-    padding-top: 48px;
+.ttl-h2 {
+    font-weight: 700; 
     padding-left: 20px;
-    padding-bottom: 10px;
 }
 
-.groups {
+/*précisions non incluses dans ttl-h2*/
+.process-h2 {
+    padding-bottom: 10px;
+    padding-top: 48px;
+
+}
+
+.sctn-groups {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.group {
+
+.groups-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -211,7 +217,7 @@ h1 {
     background-color: #F6F6F6;
 }
 
-.group i {
+.instructions i {
     color: #7E7E7E;
     margin-left: 5px;
 }
@@ -241,7 +247,7 @@ h1 {
 }
 
 /* TROISIÈME SECTION PLACES */ 
-.places {
+.sctn-places {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,15 +257,13 @@ h1 {
     padding-bottom: 60px;
 }
 
-.places h2 {
-    font-weight: 700;
+.places-h2 {
     font-size: 1.5em;
     padding-top: 20px;
     padding-bottom: 0;
-    padding-left: 20px;
 }
- 
-.cards {
+   
+.sctn-cards {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -267,7 +271,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.card {
+.card-content {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -275,16 +279,16 @@ h1 {
     background-color: #FFF; 
 }
 
-.card a {
+.card__link {
     text-decoration: none;
     color: #000;
 }
 
-.card a:hover {
+.card__link:hover {
     color: #000;
 }
 
-.card img {
+.card__img {
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -320,7 +324,7 @@ h1 {
     flex-direction: column;
 }
 
-/* heart homepage/cards */
+/* heart homepage/cards 
 .tolike {
     display: flex;
     flex-direction: row;
@@ -337,7 +341,7 @@ h1 {
     background-color: transparent;
 }
 
-/*hover*/  
+/*hover  
 .heart:hover > .empty-heart {
     display: none;
 }
@@ -370,7 +374,7 @@ h1 {
     100% {
         color:#9356DC; 
     }
-}
+}*/
 
 .zone {
     padding-left: 10px;
@@ -517,13 +521,13 @@ h1 {
     width: 40px;
 }
 
-.menu__item {
+/*.menu__item {
     width: 100%;
     animation: fadeIn 3s ease-in-out forwards;
     opacity: 0;
 }
 
-/* entrées*/
+/* entrées
 .first:nth-child(1){
     animation-delay: 0.5s;
 }
@@ -536,7 +540,7 @@ h1 {
     animation-delay: 0.5s;
 }
 
-/*plats*/
+/*plats
 .second:nth-child(1){
     animation-delay: 1.5s;
 }
@@ -549,7 +553,7 @@ h1 {
     animation-delay: 1.5s;
 }
 
-/*desserts*/
+/*desserts
 .third:nth-child(1){
     animation-delay: 2s;
 }
@@ -571,7 +575,7 @@ h1 {
         opacity: 1;
     }
 }
-
+*/
 .card-bis {
     display: flex;
     flex-direction: row;
@@ -602,19 +606,15 @@ h1 {
 .card-text p {
     margin:0;
     padding-bottom: 0;
-    /*justify-content: space-between;*/
 }
 
 .price {
     width: 35%;
     font-weight: bold; 
     padding-right: 10px;
-
-   
-    /*padding-left: -10%;*/
 }
 
-.card-check {
+/*.card-check {
     background-color:#99E2D0;
     padding: 22px;
     color: white;
@@ -639,6 +639,7 @@ h1 {
         transform: rotate(360deg);
     }
 }
+*/
 
 /*ellipsis*/
 .overflow-ellipsis {
@@ -670,17 +671,17 @@ h1 {
         font-size: 0.9em;
     }
 
-    .group i {
+    .instructions i {
         margin-right: -10px;
     }
     
     /* TROISIEME SECTION PLACES */
     
-    .card {
+    .card-content {
         width: 100%;
     }
 
-    .card img {
+    .card__img {
         object-fit: cover;
     }
 
@@ -724,18 +725,18 @@ h1 {
     }
 
 /* PREMIÈRE SECTION RESERVATION*/
-.reservations {
+.sctn-reservations {
     padding-bottom: 30px;
 }
 
 /* DEUXIEME SECTION PROCESS */
     
-    .process h2 {
+    .ttl-h2 {
         padding-left: 2%;
         padding-top: 40px;
     }
 
-    .groups {
+    .sctn-groups {
         margin: auto;
         flex-direction: row;
         width: 100%;
@@ -756,7 +757,7 @@ h1 {
       padding-left: 2%;
     }
 
-    .cards {
+    .sctn-cards {
         /*margin: auto;*/
         flex-direction: row;
         flex-wrap: wrap;
@@ -764,12 +765,12 @@ h1 {
         align-items: center;
     }
 
-    .card {   
+    .card-content {   
         width: 35%; /* + gd en version desktop */
         margin-bottom: 30px;
     }
 
-    .card img {
+    .card__img {
         height: 230px; /* + gd en version desktop */
     }
 
@@ -805,16 +806,16 @@ h1 {
         gap: 18px;
     }
 
-    .one {
+    .order--one {
         order: 3;
     }
 
-    .two {
+    .order--two {
         order: 1;
         flex: 1;
     }
 
-    .three {
+    .order--three {
         order: 2;
     }
 
