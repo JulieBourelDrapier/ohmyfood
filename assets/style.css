@@ -574,6 +574,7 @@ h1 {
 
 .card-bis {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;/*gère l'espace entre le menu et le check*/
     width: 100%;
@@ -587,6 +588,7 @@ h1 {
 }
 
 .card-text {
+    width: 70%;
     padding-left: 10px;
     padding-bottom: 0;
 }
@@ -600,16 +602,16 @@ h1 {
 .card-text p {
     margin:0;
     padding-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .price {
+    width: 35%;
     font-weight: bold; 
-    display: flex;
-    justify-content: flex-end;
-    padding-left: -10%;
+    padding-right: 10px;
+
+   
+    /*padding-left: -10%;*/
 }
 
 .card-check {
@@ -689,10 +691,12 @@ h1 {
     .card img {
         object-fit: cover;
     }
+
     /*pages menu : price*/
     .price {
-        padding-left: 35%;
-        padding-right: 5px;
+        /*padding-left: 35%;*/
+        /*padding-right: 5px;*/
+        width: 5%;
     }
     
     
@@ -783,8 +787,9 @@ h1 {
 
     /*pages menu : price*/
     .price {
-        padding-left: 55%;
-        padding-right: 10px;
+        /*padding-left: 55%;*/
+        /*padding-right: 10px;*/
+        width: 3%;
     }
 /* FOOTER */
 
