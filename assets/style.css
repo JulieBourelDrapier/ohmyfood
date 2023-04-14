@@ -105,7 +105,7 @@ body {
     border-bottom: 4px solid #dcdada;
 }
 
-.hdr img {
+.hdr__img {
     height: 30px;
 }
 
@@ -390,7 +390,7 @@ h1 {
     gap: 6px;
 }
 
-.logo {
+.ftr__logo {
     font-family: 'shrikhand', sans-serif;
     font-size: 1.2em;
     padding-top: 20px;
@@ -412,13 +412,13 @@ h1 {
     padding-right: 7px;
 }
 
-.ftr a {
+.ftr__link {
     color: #FFF;
     text-decoration: none;
 }
 
-.ftr a:hover {
-    color:#99E2D0;
+.ftr__link:hover {
+    color:#9356DC;
 }
 
 
@@ -648,9 +648,7 @@ h1 {
     width: 35%;
 }
 
-
-
-
+/*btn commander*/
 .btn-cta {
     width: 190px;   
     margin-top: 20px;
@@ -662,12 +660,6 @@ h1 {
 @media screen and (min-width: 769px) and (max-width: 999px) {  
 
     /* DEUXIEME SECTION PROCESS */
-    .groups {
-        /*width: 100%;*/
-        /*justify-content: center;*/
-        /*padding-left: 2%;*/
-    }
-
     .instructions {
         width: 95%;
         padding-left: 20px;
@@ -694,8 +686,6 @@ h1 {
 
     /*pages menu : price*/
     .price {
-        /*padding-left: 35%;*/
-        /*padding-right: 5px;*/
         width: 5%;
     }
     
@@ -707,7 +697,7 @@ h1 {
         gap: 10px;
     }
     
-    .logo {
+    .ftr__logo {
         padding-right: 20px;
     }
     
@@ -783,21 +773,19 @@ h1 {
         height: 230px; /* + gd en version desktop */
     }
 
-    /*pages menu : price*/
+/*pages menu : price*/
     .price {
-        /*padding-left: 55%;*/
-        /*padding-right: 10px;*/
         width: 2%;
     }
-/* FOOTER */
 
+/* FOOTER */
     .ftr {
         flex-direction: row;
         padding-left: 0;
         padding-bottom: 50px;
     }
 
-    .logo {
+    .ftr__logo {
         padding-top: 20px;
         padding-bottom: 10px;
         padding-right: 60px;
@@ -835,9 +823,6 @@ h1 {
         width: 80%;
         background-color: #F6F6F6;
     }
-
-        /*je dois retravailler le footer. les éléments ne sont pas dans le meme order*/
-        /* apply order après avoir crée une div pour chaque element*/   
 }
 
 
