@@ -245,11 +245,11 @@ $text-dark-grey: #353535;
     transition: 0.3s;
 }
 
-.card-bis:hover > .card-check {
+.card-bis__link:hover > .card-check {
     margin-right: 0;
 }
 
-.card-bis:hover > .card-check i {
+.card-bis__link:hover > .card-check i {
     animation: rotate 0.5s ease-in-out;
 }
 
