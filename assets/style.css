@@ -9,8 +9,8 @@ body {
     /*padding-bottom: 10px;*/
 }
 
-/***** LOADER voir sass.scss*****/
-/*.loader {
+/**** LOADER *****/
+.loader {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -22,8 +22,8 @@ body {
     left: 0;
     display: flex;
     justify-content: center; /*centré sur X*/
-    /*align-items: center;  /*centré sur Y*/
-    /*overflow: hidden;
+    align-items: center;  /*centré sur Y*/
+    overflow: hidden;
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3000ms;
 }
@@ -91,7 +91,7 @@ body {
         width: 0;
     }
 }
-*/
+
 
 /*HEADER*/
 .hdr {
@@ -164,6 +164,27 @@ h1 {
 }
 
 /*les caractéristiques de btn sont sur sass*/
+.btn {
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 25px;
+    border: none;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(360deg,#9356DC, #FF79DA);
+    color: #FFF;
+    opacity: 1;
+    transition: opacity 1s;
+    text-decoration: none;
+}
+
+.btn:hover {
+        opacity: 0.7;
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+}
 
 /* DEUXIÈME SECTION PROCESS */
 .sctn-process {
@@ -324,7 +345,7 @@ h1 {
     flex-direction: column;
 }
 
-/* heart homepage/cards 
+/* heart homepage/cards */
 .tolike {
     display: flex;
     flex-direction: row;
@@ -341,7 +362,7 @@ h1 {
     background-color: transparent;
 }
 
-/*hover  
+/* hover */ 
 .heart:hover > .empty-heart {
     display: none;
 }
@@ -374,7 +395,7 @@ h1 {
     100% {
         color:#9356DC; 
     }
-}*/
+}
 
 .zone {
     padding-left: 10px;
@@ -521,13 +542,13 @@ h1 {
     width: 40px;
 }
 
-/*.menu__item {
+.menu__item {
     width: 100%;
     animation: fadeIn 3s ease-in-out forwards;
     opacity: 0;
 }
 
-/* entrées
+/* entrées */
 .first:nth-child(1){
     animation-delay: 0.5s;
 }
@@ -540,7 +561,7 @@ h1 {
     animation-delay: 0.5s;
 }
 
-/*plats
+/* plats */
 .second:nth-child(1){
     animation-delay: 1.5s;
 }
@@ -553,7 +574,7 @@ h1 {
     animation-delay: 1.5s;
 }
 
-/*desserts
+/*desserts */
 .third:nth-child(1){
     animation-delay: 2s;
 }
@@ -575,7 +596,7 @@ h1 {
         opacity: 1;
     }
 }
-*/
+
 .card-bis__link {
     display: flex;
     flex-direction: row;
@@ -614,7 +635,7 @@ h1 {
     padding-right: 10px;
 }
 
-/*.card-check {
+.card-check {
     background-color:#99E2D0;
     padding: 22px;
     color: white;
