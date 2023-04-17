@@ -24,10 +24,12 @@ body {
     justify-content: center; /*centré sur X*/
     align-items: center;  /*centré sur Y*/
     overflow: hidden;
+    /*animation du loader*/
     animation: fadeOut 0.5s ease-in-out forwards;
-    animation-delay: 3000ms;
+    animation-delay: 3s;
 }
 
+/* bloc qui réunit les dots du loader */
 .loader-dots {
     width: 300px;
     display: flex;
@@ -35,6 +37,7 @@ body {
     justify-content: space-between;
 }
 
+/* gestion des dot un à un */
 .dot {
     width: 70px;
     height: 70px;
@@ -45,18 +48,19 @@ body {
     justify-content: center;
 }
 
+/* animation des dots */
 .dot:nth-child(1) {
-    animation-delay: 500ms;
+    animation-delay: 0.5s;
     background:#9356DC;
 }
 
 .dot:nth-child(2) {
-    animation-delay: 1000ms;
+    animation-delay: 1s;
     background: #FF79DA; 
 }
 
 .dot:nth-child(3) {
-    animation-delay: 1500ms;
+    animation-delay: 1.5s;
     background: #99E2D0;
 }
 
@@ -78,6 +82,7 @@ body {
     }
 }
 
+/* disparition du loader après 3sec */
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -91,7 +96,6 @@ body {
         width: 0;
     }
 }
-
 
 /*HEADER*/
 .hdr {
@@ -141,6 +145,7 @@ body {
     padding-bottom: 60px;
 }
 
+/*caractéristiques du titre h1 */
 h1 {
     font-size: 1.5em;
     color: #000;
@@ -163,7 +168,7 @@ h1 {
     padding-bottom: 27px;
 }
 
-/*les caractéristiques de btn sont sur sass*/
+/*caractéristiques du btn*/
 .btn {
     font-weight: 500;
     font-size: 1em;
@@ -181,10 +186,12 @@ h1 {
     text-decoration: none;
 }
 
+/* changement d'apparence du btn au survol de la souris */
 .btn:hover {
         opacity: 0.7;
         box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 /* DEUXIÈME SECTION PROCESS */
 .sctn-process {
@@ -195,12 +202,12 @@ h1 {
     padding-bottom: 40px;
 }
 
-/*h2*/
+/*caractéristique des titres h2*/
 .h2 {
     font-weight: 700; 
 }
 
-/*précisions non incluses dans h2*/
+/*précisions du titre h2 de la 2e section*/
 .process-h2 {
     padding-left: 20px;
     padding-bottom: 10px;
@@ -305,6 +312,7 @@ h1 {
     color: #000;
 }
 
+/* la couleur du lien au passage de souris est identique */
 .card__link:hover {
     color: #000;
 }
@@ -382,6 +390,7 @@ h1 {
 .full-heart i {
     opacity: 0;
     color:#9356DC;
+    /*animation remplissage du coeur */
     animation: linear-gradient 1s ease-out; 
 }
 
@@ -494,7 +503,6 @@ h1 {
     background-color: #008766;
     width: 100%;
     margin: auto;
-    /*gap: 10px;*/
     background-color: #F6F6F6;
     justify-content: center;
     align-items: center;
@@ -587,7 +595,6 @@ h1 {
     animation-delay: 2s;
 }
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -660,7 +667,6 @@ h1 {
         transform: rotate(360deg);
     }
 }
-*/
 
 /*ellipsis*/
 .overflow-ellipsis {
@@ -746,14 +752,14 @@ h1 {
     }
 
 /* PREMIÈRE SECTION RESERVATION*/
-.sctn-reservations {
+    .sctn-reservations {
     padding-bottom: 30px;
-}
+    }
 
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
-    width: 90%;
-    margin: auto;
+        width: 90%;
+        margin: auto;
     }
 
     .process-h2 {
