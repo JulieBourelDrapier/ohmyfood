@@ -196,16 +196,15 @@ h1 {
 }
 
 /*h2*/
-.ttl-h2 {
+.h2 {
     font-weight: 700; 
-    padding-left: 20px;
 }
 
-/*précisions non incluses dans ttl-h2*/
+/*précisions non incluses dans h2*/
 .process-h2 {
+    padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 48px;
-
 }
 
 .sctn-groups {
@@ -282,6 +281,7 @@ h1 {
     font-size: 1.5em;
     padding-top: 20px;
     padding-bottom: 0;
+    padding-left: 20px;
 }
    
 .sctn-cards {
@@ -751,35 +751,44 @@ h1 {
 }
 
 /* DEUXIEME SECTION PROCESS */
-    
-    .ttl-h2 {
-        padding-left: 2%;
+    .sctn-process {
+    width: 90%;
+    margin: auto;
+    }
+
+    .process-h2 {
+        padding-left: 80px;
         padding-top: 40px;
     }
 
     .sctn-groups {
         margin: auto;
         flex-direction: row;
-        width: 100%;
+        width: 90%;
     }
 
     .instructions {
         width: 320px;
         padding-right: 15px;
-
     }
 
 /* SECTION3 PLACES */
+    .sctn-places {
+    width: 100%;
+    margin: auto;
+    }
+
     .places {
         padding-top: 0;
     }
     
-    .places h2 {
-      padding-left: 2%;
+    .places-h2 {
+        padding-top: 0;
+        padding-bottom: 10px;
+        padding-left: 150px;
     }
 
     .sctn-cards {
-        /*margin: auto;*/
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
