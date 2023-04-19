@@ -619,7 +619,7 @@ body {
     }
 }
 
-.card-bis__link {
+.card-bis {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -666,11 +666,11 @@ body {
     transition: 0.3s;
 }
 
-.card-bis__link:hover > .card-check {
+.card-bis:hover > .card-check {
     margin-right: 0;
 }
 
-.card-bis__link:hover > .card-check i {
+.card-bis:hover > .card-check i {
     animation: rotate 0.5s ease-in-out;
 }
 
