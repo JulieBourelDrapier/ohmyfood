@@ -249,7 +249,7 @@ h1 {
     margin-left: 5px;
 }
 
-.colored-instructions i {
+.instructions i:hover{
     color: #9556DC;
 }
 
