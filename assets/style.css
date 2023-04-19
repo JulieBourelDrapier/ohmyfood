@@ -138,10 +138,12 @@ body {
 }
 
 /* PREMIÈRE SECTION RÉSERVATIONS*/
+
 .sctn-reservations {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 100%;
     background-color: #f6F6F6;
@@ -149,27 +151,33 @@ body {
     padding-bottom: 60px;
 }
 
-/*caractéristiques du titre h1 */
-h1 {
-    font-size: 1.5em;
-    color: #000;
-    margin-left: 30px;
-    margin-bottom: 5px;
-    flex-wrap: wrap;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: 700;
+.sctn-reservations li {
+    list-style: none;
 }
 
-.reservations-content {
-    font-size: 1.1em;
+.reservations__h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+.reservations__content {
     color: #353535;
-    padding-bottom: 27px;
+    font-size: 1.1em;
     font-weight: 300;
-    margin-bottom: 5px;
-    margin-left: 25px;
-    padding-left: 20px;
-    padding-bottom: 27px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    padding-bottom: 27px;  
 }
 
 /*caractéristiques du btn*/
