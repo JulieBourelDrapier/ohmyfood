@@ -686,7 +686,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 35%;
+    width: 90%; /*35%*/
 }
 
 /*btn commander*/
