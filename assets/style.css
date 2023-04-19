@@ -731,6 +731,10 @@ body {
     .price {
         width: 5%;
     }
+
+    .sctn-menu {
+        width: 70%;
+       }
     
     
     /* FOOTER */
@@ -825,11 +829,26 @@ body {
         height: 230px; /* + gd en version desktop */
     }
 
-/*pages menu : price*/
+/*pages menu*/
     .price {
-        width: 1%;
+        width: 5%;
+        padding-top: 30px;
     }
 
+    .main-sctn {
+        width: 80%;
+        background-color: #F6F6F6;
+    }
+
+    /*placement titre et <i> coeur*/
+    .sctn-presentation {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sctn-menu {
+     width: 70%;
+    }
 /* FOOTER */
     .ftr {
         flex-direction: row;
@@ -868,27 +887,6 @@ body {
 
     .order--three {
         order: 2;
-    }
-
-    /* page 2 et +*/
-    .main-sctn {
-        width: 80%;
-        background-color: #F6F6F6;
-    }
-
-    /*placement titre et <i> coeur*/
-    .sctn-presentation {
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .sctn-menu {
-     
-        
-    }
-
-    .card-bis__link {
-       
     }
 }
 
