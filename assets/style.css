@@ -875,7 +875,23 @@ body {
         width: 80%;
         background-color: #F6F6F6;
     }
+
+    /*placement titre et <i> coeur*/
+    .sctn-presentation {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sctn-menu {
+     
+        
+    }
+
+    .card-bis__link {
+       
+    }
 }
+
 
 
     
