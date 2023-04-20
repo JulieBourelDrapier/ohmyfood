@@ -649,28 +649,27 @@ ul, li {
 }
 
 /*********************** Media queries desktop **********************/
-@media screen and (min-width: 999px) {  
+@media screen and (min-width: 999px) { 
+/* MARGIN */
+    .sctn-process, .groups-content, .sctn-places, .sctn-cards {
+        margin: auto;
+        } 
 /* PREMIÈRE SECTION RESERVATION */
     .sctn-reservations {
     padding-bottom: 30px;
     }
-
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
-        margin: auto;
         width: 82%;
     }
     .process-h2 {
         padding-top: 40px;
         padding-left: 45px;
     }
-    .sctn-groups {
+    .sctn-groups, .groups-content {
         flex-direction: row;  
     }
     .groups-content {
-        display: flex;
-        flex-direction: row;
-        margin: auto;  
         width: 35%;
     }
     .instructions {
@@ -678,21 +677,16 @@ ul, li {
     }
 
 /* TROISIÈME SECTION PLACES */
-    .sctn-places {
-    margin: auto;
-    }
-    .places {
+    .places, .places-h2 {
         padding-top: 0;
     }
     .places-h2 {
-        padding-top: 0;
         padding-bottom: 10px;
         padding-left: 196px;
     }
     .sctn-cards {
         width: 80%;
         flex-direction: row;
-        margin: auto;
         gap: 90px;
         flex-wrap: wrap;
     }
@@ -718,7 +712,7 @@ ul, li {
         gap: 30px;
     }
     .sctn-menu {
-     width: 70%;
+        width: 70%;
     }
 
 /* FOOTER */
