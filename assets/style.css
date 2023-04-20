@@ -1,10 +1,12 @@
 /* Projet Ohmyfood nouvelle version */
+
 /* variables declaration */
 :root {
+/*couleurs principales du site*/
 	--primary-color: #9356DC;
 	--secondary-color: #FF79DA;
 	--third-color: #99E2D0;
-
+/*couleur de fond et de police*/
     --light-background: #EAEAEA;
     --lighter-background: #F6F6F6;  
 
@@ -14,18 +16,18 @@
     --black-color: #000;
 }
 
-/*MISE EN PAGE*/
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
+/* DRY */
 
+/* MISE EN PAGE */
 .container {
+    font-family: 'Roboto', sans-serif;
     margin: auto;
     padding: 0;
     margin: 0;
     width: 100%;
-    /*padding-bottom: 10px;*/
+}
+ul, li {
+    list-style: none;
 }
 
 /**** LOADER *****/
@@ -43,11 +45,10 @@ body {
     justify-content: center; /*centré sur X*/
     align-items: center;  /*centré sur Y*/
     overflow: hidden;
-    /*animation du loader*/
+/* animation du loader */
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3s;
 }
-
 /* bloc qui réunit les dots du loader */
 .loader-dots {
     width: 300px;
@@ -55,7 +56,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 /* gestion des dot un à un */
 .dot {
     width: 70px;
@@ -66,24 +66,19 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 /* animation des dots */
 .dot:nth-child(1) {
     animation-delay: 0.5s;
     background: var(--primary-color);
-  
 }
-
 .dot:nth-child(2) {
     animation-delay: 1s;
     background:  var(--secondary-color);
 }
-
 .dot:nth-child(3) {
     animation-delay: 1.5s;
     background: var(--third-color);
 }
-
 @keyframes upAndDown {
     0% {
         margin-top: 0px;
@@ -101,7 +96,6 @@ body {
         margin-top: 0;
     }
 }
-
 /* disparition du loader après 3sec */
 @keyframes fadeOut {
     0% {
@@ -117,7 +111,7 @@ body {
     }
 }
 
-/*HEADER*/
+/* HEADER */
 .hdr {
     display: flex;
     flex-direction: column;
@@ -128,12 +122,11 @@ body {
     padding-bottom: 15px; 
     border-bottom: 4px solid #dcdada;
 }
-
 .hdr__img {
     height: 30px;
 }
 
-/*TOPNAV = endroit où est localisé le site */
+/* TOPNAV = endroit où est localisé le site */
 .topnav {
     display: flex;
     flex-direction: row;
@@ -147,14 +140,12 @@ body {
     font-size: 1em;
     font-weight: 500;
 }
-
 .topnav__i {
     padding-right: 15px; 
     font-size: 1.1em;  
 }
 
-/* PREMIÈRE SECTION RÉSERVATIONS*/
-
+/* PREMIÈRE SECTION RÉSERVATIONS */
 .sctn-reservations {
     padding: 0;
     margin: 0;
@@ -166,11 +157,6 @@ body {
     padding-top: 40px;
     padding-bottom: 60px;
 }
-
-.sctn-reservations li {
-    list-style: none;
-}
-
 .reservations__h1 {
     font-size: 1.5em;
     font-weight: 700;
@@ -182,7 +168,6 @@ body {
     width: 80%;
     padding-bottom: 15px;
 }
-
 .reservations__content {
     color: var(--dark-grey);
     font-size: 1.1em;
@@ -195,8 +180,7 @@ body {
     text-align: center;
     padding-bottom: 27px;  
 }
-
-/*caractéristiques du btn*/
+/* caractéristiques du btn */
 .btn {
     font-weight: 500;
     font-size: 1em;
@@ -213,13 +197,11 @@ body {
     transition: opacity 1s;
     text-decoration: none;
 }
-
 /* changement d'apparence du btn au survol de la souris */
 .btn:hover {
     opacity: 0.7;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 /* DEUXIÈME SECTION PROCESS */
 .sctn-process {
@@ -229,26 +211,22 @@ body {
     width: 100%;
     padding-bottom: 40px;
 }
-
-/*caractéristique des titres h2*/
+/*caractéristique des h2*/
 .h2 {
     font-weight: 700; 
 }
-
-/*précisions du titre h2 de la 2e section*/
+/*précisions h2 2e section*/
 .process-h2 {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 48px;
 }
-
 .sctn-groups {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 .groups-content {
     display: flex;
     flex-direction: row;
@@ -257,7 +235,6 @@ body {
     width: 95%;
     padding-bottom: 25px;
 }
-
 .instructions { 
     font-weight: 500;
     display: flex;
@@ -271,17 +248,14 @@ body {
     gap: 20px;
     background-color: var(--lighter-background);
 }
-
 .instructions i {
     color: #7E7E7E;
     font-size: 1.3rem;
     margin-left: 5px;
 }
-
 .instructions i:hover{
     color: var(--primary-color);
 }
-
 .number {
     font-weight: 500;
     box-sizing: border-box;
@@ -296,7 +270,6 @@ body {
     margin-right: -16px;
     z-index: 999999;
 }
-
 .instructions span {
     font-weight: bold;
 }
@@ -311,14 +284,12 @@ body {
     padding-top: 10px;
     padding-bottom: 60px;
 }
-
 .places-h2 {
     font-size: 1.5em;
     padding-top: 20px;
     padding-bottom: 0;
     padding-left: 20px;
-}
-   
+}   
 .sctn-cards {
     display: flex;
     flex-direction: column;
@@ -334,17 +305,10 @@ body {
     border-radius: 20px 20px 20px 20px;
     background-color: var(--white-color);
 }
-
-.card__link {
+.card__link, .card__link:hover {
     text-decoration: none;
     color: var(--black-color);
 }
-
-/* la couleur du lien au passage de souris est identique */
-.card__link:hover {
-    color: var(--black-color);
-}
-
 .card__img {
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -352,12 +316,10 @@ body {
     height: 210px;
     background-position: center;
 }
-
 .new {
     display: flex;
     flex-direction: row;
 }
-
 .btn-new {
     background: var(--third-color);
     color: #008766;
@@ -374,13 +336,11 @@ body {
     border-radius: 2px;
     box-sizing: border-box;
 }
-
 .restaurant {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
 /* heart homepage/cards */
 .tolike {
     display: flex;
@@ -388,7 +348,6 @@ body {
     justify-content: space-between;
     padding-left: 10px;
 }
-
 .heart {
     padding-top: 20px;
     padding-right: 25px;
@@ -397,31 +356,25 @@ body {
     cursor: pointer;
     background-color: transparent;
 }
-
 /* hover */ 
 .heart:hover > .empty-heart {
     display: none;
 }
-
 .heart:hover > .full-heart {
     display: block;
 }
-
 .heart:hover > .full-heart i {
     opacity: 1;
 }
-
 .full-heart {
     display: none;
 }
-
 .full-heart i {
     opacity: 0;
     color: var(--primary-color);
-    /*animation remplissage du coeur */
+/* animation remplissage du coeur */
     animation: linear-gradient 1s ease-out; 
 }
-
 @keyframes linear-gradient {
     0% {
         color: var(--primary-color);
@@ -433,7 +386,6 @@ body {
         color: var(--primary-color); 
     }
 }
-
 .zone {
     padding-left: 10px;
     padding-bottom: 10px;
@@ -451,34 +403,28 @@ body {
     padding-bottom: 20px;
     gap: 6px;
 }
-
 .ftr__logo {
     font-family: 'shrikhand', sans-serif;
     font-size: 1.2em;
     padding-top: 20px;
     padding-bottom: 10px;
 }
-
 .ac-i, .ss-i {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-
 .rotated i {
     transform: rotate(-35deg);
 }
-
 .ftr i {
     font-size: 0.8em;
     padding-right: 7px;
 }
-
 .ftr__link {
     color: var(--white-color);
     text-decoration: none;
 }
-
 .ftr__link:hover {
     color: var(--primary-color);
 }
@@ -486,7 +432,7 @@ body {
 
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
-/*header pages 2, 3, 4 et 5*/
+/* header pages 2, 3, 4 et 5 */
 .pages-hdr {
     display: flex;
     flex-direction: row;
@@ -495,36 +441,29 @@ body {
     padding-bottom: 15px; 
     border-bottom: none;
 }
-
-.pages-hdr a /*effet sur la flèche*/ {
+.pages-hdr a, .pages-hdr a:hover /*effet sur la flèche*/ {
     color: var(--black-color);
     text-decoration: none;
 }
-
-.pages-hdr a:hover {
-    color: var(--black-color);
-    }
-
 .pages-hdr img {
     align-items: center;
     justify-content: center;
     margin: auto;
 }
-
-.pages-hdr i {/* trouver un moyen pour le placer correctement*/
+.pages-hdr i {
     font-size: 1.3em;
     padding-left: 15px;
 }
 
 /* bannière */
-.banner img {
+.banner__img {
     width: 100%;
     object-fit: cover;
     padding-bottom: 30px;
     height: 400px;
 }
 
-/* section où sont présentés les menus*/
+/* section où sont présentés les menus */
 .main-sctn {
     display: flex;
     flex-direction: column;
@@ -538,7 +477,6 @@ body {
     position: relative;
     margin-top: -80px;
 }
-
 .sctn-presentation {
     width: 100%;
     display: flex;
@@ -547,7 +485,6 @@ body {
     text-align: center;
     padding-top: 20px;
 }
-
 .presentation-h1 {
     font-family: 'shrikhand', sans-serif;
     font-size: 1.5em;
@@ -556,12 +493,10 @@ body {
     padding-left: 0;
     margin-left: 0;
 }
-
 .sctn-presentation i {
     font-size: 1.2em;
     padding-top: 0;
 }
-
 .sctn-menu {
     display: flex;
     flex-direction: column;
@@ -570,7 +505,6 @@ body {
     padding: 0;
     background-color: var(--lighter-background);
 }
-
 .menu-h2 {
     font-size: 1em;
     font-weight: lighter;
@@ -578,52 +512,24 @@ body {
     padding-bottom: 5px;
     width: 40px;
 }
-
 .menu__item {
     width: 100%;
+/* animation en cascade */
     animation: fadeIn 3s ease-in-out forwards;
     opacity: 0;
 }
-
 /* entrées */
-.first:nth-child(1){
+.first:nth-child(1), .first:nth-child(2), .first:nth-child(3){
     animation-delay: 0.5s;
 }
-
-.first:nth-child(2){
-    animation-delay: 0.5s;
-}
-
-.first:nth-child(3){
-    animation-delay: 0.5s;
-}
-
 /* plats */
-.second:nth-child(1){
+.second:nth-child(1), .second:nth-child(2), .second:nth-child(3){
     animation-delay: 1.5s;
 }
-
-.second:nth-child(2){
-    animation-delay: 1.5s;
-}
-
-.second:nth-child(3){
-    animation-delay: 1.5s;
-}
-
 /*desserts */
-.third:nth-child(1){
+.third:nth-child(1), .third:nth-child(2), .third:nth-child(3){
     animation-delay: 2s;
 }
-
-.third:nth-child(2){
-    animation-delay: 2s;
-}
-
-.third:nth-child(3){
-    animation-delay: 2s;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -632,7 +538,6 @@ body {
         opacity: 1;
     }
 }
-
 .card-bis {
     display: flex;
     flex-direction: row;
@@ -647,30 +552,25 @@ body {
     background-color: var(--white-color);
     margin-bottom: 20px;
 }
-
 .card-text {
     width: 70%;
     padding-left: 10px;
     padding-bottom: 0;
 }
-
 .card-text-h3 {
     margin: 0;
     padding: 0;
     font-size: 1.1em;
 }
-
 .card-text p {
     margin:0;
     padding-bottom: 0;
 }
-
 .price {
     width: 35%;
     font-weight: bold; 
     padding-right: 10px;
 }
-
 .card-check {
     background-color: var(--third-color);
     padding: 22px;
@@ -679,15 +579,12 @@ body {
     margin-right: -200px;
     transition: 0.3s;
 }
-
 .card-bis:hover > .card-check {
     margin-right: 0;
 }
-
 .card-bis:hover > .card-check i {
     animation: rotate 0.5s ease-in-out;
 }
-
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -696,7 +593,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 /*ellipsis*/
 .overflow-ellipsis {
     overflow: hidden;
@@ -704,7 +600,6 @@ body {
     text-overflow: ellipsis;
     width: 90%;
 }
-
 /*btn commander*/
 .btn-cta {
     width: 190px;   
@@ -736,7 +631,7 @@ body {
         margin-right: -10px;
         font-size: 1em;
     }
-/* TROISIEME SECTION PLACES */
+/* TROISIÈME SECTION PLACES */
     .places-h2 {
         padding-left: 45px;
     }
@@ -750,13 +645,14 @@ body {
     .card__img {
         object-fit: cover;
     }
-/*pages menu : price*/
+/* pages menu : price */
     .price {
         width: 5%;
     }
     .sctn-menu {
         width: 70%;
        }
+
 /* FOOTER */
     .ftr {
         flex-direction: column;
@@ -776,14 +672,11 @@ body {
 
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 999px) {  
-/* HEADER */
-    .hdr {
-        width: 100%; 
-    }
-/* PREMIÈRE SECTION RESERVATION*/
+/* PREMIÈRE SECTION RESERVATION */
     .sctn-reservations {
     padding-bottom: 30px;
     }
+
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
         margin: auto;
@@ -794,7 +687,6 @@ body {
         padding-left: 45px;
     }
     .sctn-groups {
-        width: 100%;
         flex-direction: row;  
     }
     .groups-content {
@@ -806,9 +698,9 @@ body {
     .instructions {
         width: 320px;
     }
-/* SECTION3 PLACES */
+
+/* TROISIÈME SECTION PLACES */
     .sctn-places {
-    width: 100%;
     margin: auto;
     }
     .places {
@@ -835,7 +727,7 @@ body {
     .card__img {
         height: 230px; /* + gd en version desktop */
     }
-/*pages menu*/
+/* pages menu */
     .price {
         width: 5%;
         padding-top: 30px;
@@ -844,7 +736,7 @@ body {
         width: 80%;
         background-color: var(--lighter-background);
     }
-/*placement titre et <i> coeur*/
+/* placement titre et <i> coeur */
     .sctn-presentation {
         justify-content: center;
         gap: 30px;
@@ -852,6 +744,7 @@ body {
     .sctn-menu {
      width: 70%;
     }
+
 /* FOOTER */
     .ftr {
         flex-direction: row;
@@ -864,15 +757,12 @@ body {
         padding-right: 60px;
         padding-left: 80px;
     }
-
-    .ac-i {
+    .ac-i, .ss-i {
         flex-direction: row;
         padding-top: 24px;
         justify-content: flex-end;
     }
     .ss-i {
-        flex-direction: row;
-        padding-top: 24px;
         padding-left: 50px;
         gap: 18px;
     }
