@@ -788,25 +788,23 @@ body {
 
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
-        
-        margin: 0;
+        margin: auto;
+        width: 80%;
     }
-
     .process-h2 {
-        padding-left: 70px;
         padding-top: 40px;
     }
-
     .sctn-groups {
-        margin: auto;
-        flex-direction: row;
-        width: 90%;
-        gap: 20px;
+        flex-direction: row;  
     }
-
+    .groups-content {
+        display: flex;
+        flex-direction: row;
+        margin: auto;  
+        width: 35%;
+    }
     .instructions {
         width: 320px;
-        padding-right: 15px;
     }
 
 /* SECTION3 PLACES */
