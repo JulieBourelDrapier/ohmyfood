@@ -698,11 +698,10 @@ body {
 }
 
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
-
 /*********************** Media queries tablette *********************/
 @media screen and (min-width: 769px) and (max-width: 999px) {  
 
-    /* DEUXIEME SECTION PROCESS */
+/* DEUXIEME SECTION PROCESS */
     .process-h2 {
         margin: auto;
         padding-bottom: 40px;
@@ -716,16 +715,14 @@ body {
         align-items: center;
         gap: 30px;
     }
-
     .number {
         font-size: 0.9em;
     }
-
     .instructions i {
         margin-right: -10px;
+        font-size: 1em;
     }
-    
-    /* TROISIEME SECTION PLACES */
+/* TROISIEME SECTION PLACES */
     .places-h2 {
         padding-left: 45px;
     }
@@ -736,43 +733,32 @@ body {
     .card-content {
         width: 100%;
     }
-
     .card__img {
         object-fit: cover;
     }
-
-    /*pages menu : price*/
+/*pages menu : price*/
     .price {
         width: 5%;
     }
-
     .sctn-menu {
         width: 70%;
        }
-    
-    
-    /* FOOTER */
+/* FOOTER */
     .ftr {
         flex-direction: column;
         justify-content: center;
         gap: 0;
         text-align: center;
     }
-    
     .ftr__logo {
         padding-right: 20px;
     }
-    
     .ac-i,  .ss-i {
         flex-direction: row;
         padding-top: 5px;
         margin: auto;
-    }
-    
-   
-    
+    } 
 }
-
 
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 999px) {  
@@ -780,22 +766,21 @@ body {
     .hdr {
         width: 100%; 
     }
-
 /* PREMIÈRE SECTION RESERVATION*/
     .sctn-reservations {
     padding-bottom: 30px;
     }
-
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
         margin: auto;
-        width: 80%;
+        width: 82%;
     }
     .process-h2 {
         padding-top: 40px;
         padding-left: 45px;
     }
     .sctn-groups {
+        width: 100%;
         flex-direction: row;  
     }
     .groups-content {
@@ -807,7 +792,6 @@ body {
     .instructions {
         width: 320px;
     }
-
 /* SECTION3 PLACES */
     .sctn-places {
     width: 100%;
@@ -837,24 +821,20 @@ body {
     .card__img {
         height: 230px; /* + gd en version desktop */
     }
-
 /*pages menu*/
     .price {
         width: 5%;
         padding-top: 30px;
     }
-
     .main-sctn {
         width: 80%;
         background-color: #F6F6F6;
     }
-
-    /*placement titre et <i> coeur*/
+/*placement titre et <i> coeur*/
     .sctn-presentation {
         justify-content: center;
         gap: 30px;
     }
-
     .sctn-menu {
      width: 70%;
     }
@@ -864,7 +844,6 @@ body {
         padding-left: 0;
         padding-bottom: 50px;
     }
-
     .ftr__logo {
         padding-top: 20px;
         padding-bottom: 10px;
@@ -877,23 +856,19 @@ body {
         padding-top: 24px;
         justify-content: flex-end;
     }
-
     .ss-i {
         flex-direction: row;
         padding-top: 24px;
         padding-left: 50px;
         gap: 18px;
     }
-
     .order--one {
         order: 3;
     }
-
     .order--two {
         order: 1;
         flex: 1;
     }
-
     .order--three {
         order: 2;
     }
