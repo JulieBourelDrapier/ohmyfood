@@ -1,5 +1,4 @@
 /* Projet Ohmyfood nouvelle version */
-
 /* variables declaration */
 :root {
 /*couleurs principales du site*/
@@ -16,8 +15,6 @@
     --black-color: #000;
 }
 
-/* DRY */
-
 /* MISE EN PAGE */
 .container {
     font-family: 'Roboto', sans-serif;
@@ -28,6 +25,15 @@
 }
 ul, li {
     list-style: none;
+}
+
+
+.loader, .dot, .hdr, .topnav, .reservations__h1,
+.reservations__content, .groups-content, .sctn-cards,
+.main-sctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**** LOADER *****/
@@ -41,10 +47,8 @@ ul, li {
     bottom: 0;
     right: 0;
     left: 0;
-    display: flex;
-    justify-content: center; /*centré sur X*/
-    align-items: center;  /*centré sur Y*/
     overflow: hidden;
+
 /* animation du loader */
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3s;
@@ -62,9 +66,6 @@ ul, li {
     height: 70px;
     border-radius: 50%;
     animation: upAndDown 1s ease-in-out infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 /* animation des dots */
 .dot:nth-child(1) {
@@ -113,14 +114,11 @@ ul, li {
 
 /* HEADER */
 .hdr {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px; 
-    border-bottom: 4px solid #dcdada;
+    border-bottom: 3px solid #dcdada;
 }
 .hdr__img {
     height: 30px;
@@ -128,10 +126,7 @@ ul, li {
 
 /* TOPNAV = endroit où est localisé le site */
 .topnav {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     background-color: var(--light-background);
     padding-top: 15px;
@@ -161,11 +156,7 @@ ul, li {
     font-size: 1.5em;
     font-weight: 700;
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    width: 80%;
     padding-bottom: 15px;
 }
 .reservations__content {
@@ -173,10 +164,6 @@ ul, li {
     font-size: 1.1em;
     font-weight: 300;
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     text-align: center;
     padding-bottom: 27px;  
 }
@@ -192,7 +179,7 @@ ul, li {
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     background: linear-gradient(360deg,#9356DC, #FF79DA);
-    color: #FFF;
+    color: var(--white-color);
     opacity: 1;
     transition: opacity 1s;
     text-decoration: none;
@@ -228,10 +215,7 @@ ul, li {
     width: 100%;
 }
 .groups-content {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content:center;   
     width: 95%;
     padding-bottom: 25px;
 }
@@ -291,12 +275,9 @@ ul, li {
     padding-left: 20px;
 }   
 .sctn-cards {
-    display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
 }
 .card-content {
     display: flex;
@@ -465,13 +446,10 @@ ul, li {
 
 /* section où sont présentés les menus */
 .main-sctn {
-    display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
     background-color: var(--lighter-background);
-    justify-content: center;
-    align-items: center;
     padding-bottom: 60px;
     border-radius: 50px 50px 0 0;
     position: relative;
@@ -714,8 +692,6 @@ ul, li {
     .sctn-cards {
         width: 80%;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         margin: auto;
         gap: 90px;
         flex-wrap: wrap;
