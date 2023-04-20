@@ -703,10 +703,18 @@ body {
 @media screen and (min-width: 769px) and (max-width: 999px) {  
 
     /* DEUXIEME SECTION PROCESS */
+    .process-h2 {
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    .groups-content {
+        width: 40%;
+    }
     .instructions {
         width: 95%;
-        padding-left: 20px;
+        padding-left: 40px;
         align-items: center;
+        gap: 30px;
     }
 
     .number {
@@ -718,7 +726,13 @@ body {
     }
     
     /* TROISIEME SECTION PLACES */
-    
+    .places-h2 {
+        padding-left: 45px;
+    }
+    .sctn-cards {
+        width: 90%;
+        margin: auto;
+    }
     .card-content {
         width: 100%;
     }
@@ -739,26 +753,23 @@ body {
     
     /* FOOTER */
     .ftr {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        gap: 10px;
+        gap: 0;
+        text-align: center;
     }
     
     .ftr__logo {
         padding-right: 20px;
     }
     
-    .ac-i {
+    .ac-i,  .ss-i {
         flex-direction: row;
-        padding-top: 25px;
-        padding-right: 20px;
+        padding-top: 5px;
+        margin: auto;
     }
     
-    .ss-i {
-        flex-direction: row;
-        padding-top: 25px;
-        padding-right: 20px;
-    }
+   
     
 }
 
@@ -777,8 +788,8 @@ body {
 
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
-        width: 90%;
-        margin: auto;
+        
+        margin: 0;
     }
 
     .process-h2 {
