@@ -587,10 +587,12 @@ ul, li {
 /* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 /*********************** Media queries tablette *********************/
 @media screen and (min-width: 769px) and (max-width: 999px) {  
-
+/* MARGIN */
+    .process-h2 , .sctn-cards, .ac-i, .ss-i {
+        margin: auto;
+    }
 /* DEUXIEME SECTION PROCESS */
     .process-h2 {
-        margin: auto;
         padding-bottom: 40px;
     }
     .groups-content {
@@ -615,7 +617,6 @@ ul, li {
     }
     .sctn-cards {
         width: 90%;
-        margin: auto;
     }
     .card-content {
         width: 100%;
@@ -644,7 +645,6 @@ ul, li {
     .ac-i,  .ss-i {
         flex-direction: row;
         padding-top: 5px;
-        margin: auto;
     } 
 }
 
