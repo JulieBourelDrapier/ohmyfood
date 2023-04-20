@@ -116,24 +116,22 @@ ul, li {
 }
 
 /* HEADER */
-.hdr {
-    flex-direction: column;
+.hdr, .topnav {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px; 
+}
+.hdr {
+    flex-direction: column;
     border-bottom: 3px solid #dcdada;
 }
 .hdr__img {
     height: 30px;
 }
-
 /* TOPNAV = endroit où est localisé le site */
 .topnav {
     flex-direction: row;
-    width: 100%;
     background-color: var(--light-background);
-    padding-top: 15px;
-    padding-bottom: 15px;
     color: var(--dark-grey);
     font-size: 1em;
     font-weight: 500;
@@ -142,15 +140,17 @@ ul, li {
     padding-right: 15px; 
     font-size: 1.1em;  
 }
-
+/* DRY sctn */
+.sctn-reservations, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /* PREMIÈRE SECTION RÉSERVATIONS */
 .sctn-reservations {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
     background-color: var(--lighter-background); 
     padding-top: 40px;
     padding-bottom: 60px;
@@ -194,10 +194,7 @@ ul, li {
 
 /* DEUXIÈME SECTION PROCESS */
 .sctn-process {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
     padding-bottom: 40px;
 }
 /*caractéristique des h2*/
@@ -211,10 +208,7 @@ ul, li {
     padding-top: 48px;
 }
 .sctn-groups {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: center; 
 }
 .groups-content {
     flex-direction: row;
@@ -262,10 +256,7 @@ ul, li {
 
 /* TROISIÈME SECTION PLACES */ 
 .sctn-places {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
     background-color: var(--lighter-background);
     padding-top: 10px;
     padding-bottom: 60px;
@@ -285,7 +276,7 @@ ul, li {
     display: flex;
     flex-direction: column;
     width: 95%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     background-color: var(--white-color);
 }
 .card__link, .card__link:hover {
@@ -317,11 +308,6 @@ ul, li {
     margin-top: 15px;
     border-radius: 2px;
     box-sizing: border-box;
-}
-.restaurant {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 /* heart homepage/cards */
 .tolike {
@@ -376,9 +362,6 @@ ul, li {
 
 /* FOOTER */
 .ftr {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     background-color: var(--dark-grey);
     color: var(--white-color);
     padding-left: 20px;
