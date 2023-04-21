@@ -1,10 +1,12 @@
 /* Projet Ohmyfood nouvelle version */
 /* variables declaration */
+
 :root {
 /*couleurs principales du site*/
 	--primary-color: #9356DC;
 	--secondary-color: #FF79DA;
 	--third-color: #99E2D0;
+
 /*couleur de fond et de police*/
     --light-background: #EAEAEA;
     --lighter-background: #F6F6F6;  
@@ -30,13 +32,28 @@ ul, li {
     list-style: none;
 }
 
-
 .loader, .dot, .hdr, .topnav, .reservations__h1,
 .reservations__content, .groups-content, .sctn-cards,
 .main-sctn {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* font-sizes */
+.number, .btn-new, .ftr i {
+    font-size: 0.9em;
+}
+.topnav, .btn, .menu-h2 {
+    font-size: 1em;
+}
+.topnav__i, .reservations__content, .instructions i, .card-text-h3 {
+    font-size: 1.1em;
+}
+.ftr__logo, .pages-hdr i, .sctn-presentation i {
+    font-size: 1.2em;
+}
+.reservations__h1, .places-h2, .heart, .presentation-h1 {
+    font-size: 1.5em;
 }
 
 /**** LOADER *****/
@@ -51,7 +68,6 @@ ul, li {
     right: 0;
     left: 0;
     overflow: hidden;
-
 /* animation du loader */
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3s;
@@ -72,15 +88,15 @@ ul, li {
 }
 /* animation des dots */
 .dot:nth-child(1) {
-    animation-delay: 0.5s;
+    animation-delay: 0s;
     background: var(--primary-color);
 }
 .dot:nth-child(2) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     background:  var(--secondary-color);
 }
 .dot:nth-child(3) {
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     background: var(--third-color);
 }
 @keyframes upAndDown {
@@ -133,12 +149,12 @@ ul, li {
     flex-direction: row;
     background-color: var(--light-background);
     color: var(--dark-grey);
-    font-size: 1em;
+   
     font-weight: 500;
 }
 .topnav__i {
     padding-right: 15px; 
-    font-size: 1.1em;  
+     
 }
 /* DRY sctn */
 .sctn-reservations, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
@@ -156,7 +172,7 @@ ul, li {
     padding-bottom: 60px;
 }
 .reservations__h1 {
-    font-size: 1.5em;
+   
     font-weight: 700;
     width: 80%;
     text-align: center;
@@ -164,7 +180,7 @@ ul, li {
 }
 .reservations__content {
     color: var(--dark-grey);
-    font-size: 1.1em;
+   
     font-weight: 300;
     width: 80%;
     text-align: center;
@@ -173,7 +189,7 @@ ul, li {
 /* caractéristiques du btn */
 .btn {
     font-weight: 500;
-    font-size: 1em;
+    
     border-radius: 25px;
     border: none;
     padding: 14px;
@@ -230,7 +246,7 @@ ul, li {
 }
 .instructions i {
     color: #7E7E7E;
-    font-size: 1.3rem;
+    
     margin-left: 5px;
 }
 .instructions i:hover{
@@ -246,7 +262,7 @@ ul, li {
     color: var(--white-color);
     padding-left: 8px;
     padding-top: 4px;
-    font-size: 0.9em;
+   
     margin-right: -16px;
     z-index: 999999;
 }
@@ -262,7 +278,7 @@ ul, li {
     padding-bottom: 60px;
 }
 .places-h2 {
-    font-size: 1.5em;
+    
     padding-top: 20px;
     padding-bottom: 0;
     padding-left: 20px;
@@ -296,7 +312,7 @@ ul, li {
 .btn-new {
     background: var(--third-color);
     color: #008766;
-    font-size: 14px;
+    
     width: 80px;
     height: 30px;
     padding-top: 6px;
@@ -319,7 +335,7 @@ ul, li {
 .heart {
     padding-top: 20px;
     padding-right: 25px;
-    font-size: 1.5rem;
+    
     width: 32px;
     cursor: pointer;
     background-color: transparent;
@@ -370,7 +386,7 @@ ul, li {
 }
 .ftr__logo {
     font-family: 'shrikhand', sans-serif;
-    font-size: 1.2em;
+    
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -383,7 +399,7 @@ ul, li {
     transform: rotate(-35deg);
 }
 .ftr i {
-    font-size: 0.8em;
+    
     padding-right: 7px;
 }
 .ftr__link {
@@ -414,7 +430,7 @@ ul, li {
     margin: auto;
 }
 .pages-hdr i {
-    font-size: 1.3em;
+    
     padding-left: 15px;
 }
 
@@ -447,14 +463,14 @@ ul, li {
 }
 .presentation-h1 {
     font-family: 'shrikhand', sans-serif;
-    font-size: 1.5em;
+   
     padding-top: 0;
     padding-right: 0;
     padding-left: 0;
     margin-left: 0;
 }
 .sctn-presentation i {
-    font-size: 1.2em;
+    
     padding-top: 0;
 }
 .sctn-menu {
@@ -466,7 +482,7 @@ ul, li {
     background-color: var(--lighter-background);
 }
 .menu-h2 {
-    font-size: 1em;
+   
     font-weight: lighter;
     border-bottom: 3px solid var(--third-color);
     padding-bottom: 5px;
@@ -584,9 +600,6 @@ ul, li {
         padding-left: 40px;
         align-items: center;
         gap: 30px;
-    }
-    .number {
-        font-size: 0.9em;
     }
     .instructions i {
         margin-right: -10px;
