@@ -73,6 +73,13 @@ ul, li {
 .loader, .card-content, .card-bis {
     background-color: var(--white-color);
 }
+/* DRY colors */
+.btn, .number, .ftr, .ftr__link, .card-check {
+    color: var(--white-color);
+}
+.card__link, .card__link:hover, .pages-hdr a, .pages-hdr a:hover, .card-bis {
+    color: var(--black-color); ;
+}
 
 /**** LOADER *****/
 .loader {
@@ -206,7 +213,6 @@ ul, li {
     box-sizing: border-box;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     background: linear-gradient(360deg,#9356DC, #FF79DA);
-    color: var(--white-color);
     opacity: 1;
     transition: opacity 1s;
 }
@@ -259,7 +265,6 @@ ul, li {
     width: 25px;
     height: 25px;
     background-color: var(--primary-color);
-    color: var(--white-color);
     padding-left: 8px;
     padding-top: 4px;
     margin-right: -16px;
@@ -290,9 +295,6 @@ ul, li {
     flex-direction: column;
     width: 95%;
     border-radius: 20px;
-}
-.card__link, .card__link:hover {
-    color: var(--black-color);
 }
 .card__img {
     width: 100%;
@@ -373,7 +375,6 @@ ul, li {
 /* FOOTER */
 .ftr {
     background-color: var(--dark-grey);
-    color: var(--white-color);
     padding-left: 20px;
     padding-bottom: 20px;
     gap: 6px;
@@ -395,9 +396,6 @@ ul, li {
     
     padding-right: 7px;
 }
-.ftr__link {
-    color: var(--white-color);
-}
 .ftr__link:hover {
     color: var(--primary-color);
 }
@@ -413,9 +411,6 @@ ul, li {
     padding-top: 30px;
     padding-bottom: 15px; 
     border-bottom: none;
-}
-.pages-hdr a, .pages-hdr a:hover /*effet sur la flèche*/ {
-    color: var(--black-color);
 }
 .pages-hdr img {
     align-items: center;
@@ -511,7 +506,6 @@ ul, li {
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    color: var(--black-color);
     margin-bottom: 20px;
 }
 .card-text {
@@ -536,7 +530,6 @@ ul, li {
 .card-check {
     background-color: var(--third-color);
     padding: 22px;
-    color: var(--white-color);
     font-size: 1.8rem;
     margin-right: -200px;
     transition: 0.3s;
