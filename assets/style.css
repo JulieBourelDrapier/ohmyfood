@@ -1,6 +1,5 @@
 /* Projet Ohmyfood nouvelle version */
-/* variables declaration */
-
+/* variables */
 :root {
 /*couleurs principales du site*/
 	--primary-color: #9356DC;
@@ -102,7 +101,7 @@ ul, li {
     animation: fadeOut 0.5s ease-in-out forwards;
     animation-delay: 3s;
 }
-/* bloc qui réunit les dots du loader */
+/* dots du loader */
 .loader-dots {
     width: 300px;
     display: flex;
@@ -161,11 +160,12 @@ ul, li {
     }
 }
 
-/* HEADER */
+/* DRY PADDING */
 .hdr, .topnav {
     padding-top: 15px;
     padding-bottom: 15px; 
 }
+/* HEADER */
 .hdr {
     flex-direction: column;
     border-bottom: 3px solid var(--light-grey);
@@ -182,7 +182,7 @@ ul, li {
 .topnav__i {
     padding-right: 15px; 
 }
-/* DRY sctn */
+/* DRY SCTN */
 .reservations__ul, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
     display: flex;
     flex-direction: column;
@@ -197,6 +197,7 @@ ul, li {
     align-items: center;
     padding-top: 40px;
 }
+/* DRY WIDTH/TEXT-ALIGN */
 .reservations__h1, .reservations__content {
     width: 80%;
     text-align: center;
@@ -244,6 +245,7 @@ ul, li {
 .sctn-groups {
     align-items: center; 
 }
+/* DRY DISPLAY/F-D/WIDTH */
 .groups-content, .instructions {
     display: flex;
     flex-direction: row;
@@ -361,6 +363,7 @@ ul, li {
 /* animation remplissage du coeur */
     animation: linear-gradient 1s ease-out; 
 }
+/*couleurs successives*/
 @keyframes linear-gradient {
     0% {
         color: var(--primary-color);
@@ -399,7 +402,6 @@ ul, li {
     transform: rotate(-35deg);
 }
 .ftr i {
-    
     padding-right: 7px;
 }
 .ftr__link:hover {
@@ -518,7 +520,7 @@ ul, li {
     margin: 0;
     padding: 0;
     padding-bottom: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 .card-text p {
     margin:0;
@@ -564,11 +566,11 @@ ul, li {
     width: 190px;   
     margin-top: 20px;
 }
+/* FOOTER : identique à celui de la homepage*/
 
-/* FOOTER : pas de différence avec celui de la homepage voir au dessus */
 /*********************** Media queries tablette *********************/
 @media screen and (min-width: 769px) and (max-width: 999px) {  
-/* MARGIN */
+/* DRY MARGIN */
     .process-h2 , .sctn-cards, .ac-i, .ss-i {
         margin: auto;
     }
@@ -629,7 +631,7 @@ ul, li {
 
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 999px) { 
-/* MARGIN */
+/* DRY MARGIN */
     .sctn-process, .groups-content, .sctn-places, .sctn-cards {
         margin: auto;
         } 
@@ -654,7 +656,6 @@ ul, li {
     .instructions {
         width: 320px;
     }
-
 /* TROISIÈME SECTION PLACES */
     .places, .places-h2 {
         padding-top: 0;
@@ -670,11 +671,11 @@ ul, li {
         flex-wrap: wrap;
     }
     .card-content {   
-        width: 43%; /* + gd en version desktop */
+        width: 43%; 
         margin-bottom: 30px;
     }
     .card__img {
-        height: 230px; /* + gd en version desktop */
+        height: 230px; 
     }
 /* pages menu */
     .price {
@@ -691,7 +692,6 @@ ul, li {
     .sctn-menu {
         width: 70%;
     }
-
 /* FOOTER */
     .ftr {
         flex-direction: row;
