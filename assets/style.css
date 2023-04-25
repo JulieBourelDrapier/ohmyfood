@@ -228,8 +228,9 @@ li {
   }
 }
 
-/* DRY padding-top */
+/* DRY padding-top header */
 .hdr, 
+.hdr__img,
 .topnav {
   padding-top: 15px;
 }
