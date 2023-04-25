@@ -475,17 +475,14 @@ li {
   0% {
     color:  var(--primary-color);
   }
-  20% {
+  10% {
     color: var(--secondary-color);
   }
   50% {
     color:  var(--primary-color);
   }
-  70% {
+  90% {
     color: var(--secondary-color);
-  }
-  90%{
-    color: var(--primary-color);
   }
   100%{
     color: var(--primary-color);
