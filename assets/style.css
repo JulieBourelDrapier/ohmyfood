@@ -354,8 +354,11 @@ li {
   margin-left: 5px;
 }
 
-.instructions i:hover{
+/*.instructions i:hover{
   color: var(--primary-color);
+}*/
+.instructions:hover i {
+    color: var(--primary-color);
 }
 
 .number {
@@ -672,9 +675,9 @@ li {
   margin-right: 0;
 }
 
-.card-bis:hover > .card-check i {
+/*.card-bis:hover > .card-check i {
   animation: rotate 0.5s ease-in-out;
-}
+}*/
 
 @keyframes rotate {
   from {
