@@ -32,6 +32,7 @@ a {
 ul, 
 li {
   list-style: none;
+  padding-left: 0;
 }
 
 /* DRY width 100% */
@@ -227,28 +228,30 @@ li {
   }
 }
 
-/* DRY PADDING */
+/* DRY padding-top */
 .hdr, 
 .topnav {
   padding-top: 15px;
-  padding-bottom: 15px; 
 }
 
 /* HEADER */
 .hdr {
   flex-direction: column;
-  border-bottom: 3px solid var(--light-grey);
 }
 
 .hdr__img {
   height: 30px;
+  padding-bottom: 15px;
 }
 
 /* TOPNAV = endroit où est localisé le site */
 .topnav {
-  flex-direction: row;
+  border-top: 4px solid var(--light-grey);
+  flex-direction: row;  
   background-color: var(--light-background);
   color: var(--dark-grey);
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .topnav__i {
