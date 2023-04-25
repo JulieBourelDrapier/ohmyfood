@@ -1,559 +1,690 @@
-/* Projet Ohmyfood nouvelle version */
+/* Projet Ohmyfood debuté le 16 mars sur l'ancienne version */
 /* variables */
 :root {
 /*couleurs principales du site*/
-	--primary-color: #9356DC;
-	--secondary-color: #FF79DA;
-	--third-color: #99E2D0;
-
+  --primary-color: #9356DC;
+  --secondary-color: #FF79DA;
+  --third-color: #99E2D0;
 /*couleur de fond et de police*/
-    --light-background: #EAEAEA;
-    --lighter-background: #F6F6F6;  
-
-    --dark-grey: #353535;
-    --light-grey: #dcdada;
-    --dark-green: #008766;
-
-    --grey-icon:  #7E7E7E;
-
-    --white-color: #FFF;
-    --black-color: #000;
+  --light-background: #EAEAEA;
+  --lighter-background: #F6F6F6;  
+  --dark-grey: #353535;
+  --light-grey: #dcdada;
+  --dark-green: #008766;
+  --grey-icon:  #7E7E7E;
+  --white-color: #FFF;
+  --black-color: #000;
 }
 
 /* MISE EN PAGE */
 .container {
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-ul, li {
-    list-style: none;
+
+ul, 
+li {
+  list-style: none;
 }
+
 /* DRY width 100% */
-.loader, .hdr, .topnav, .sctn-reservations, .sctn-process, 
-.sctn-groups, .sctn-places, .restaurant, .ftr, .sctn-cards, 
-.card__img, .banner__img, .main-sctn, .sctn-presentation, 
+.loader, 
+.hdr, 
+.topnav, 
+.sctn-reservations, 
+.sctn-process, 
+.sctn-groups, 
+.sctn-places, 
+.restaurant, 
+.ftr, 
+.sctn-cards, 
+.card__img, 
+.banner__img, 
+.main-sctn, 
+.sctn-presentation, 
 .menu__item {
-    width: 100%;
+  width: 100%;
 }
+
 /* DRY display/jc/ai */
-.loader, .dot, .hdr, .topnav, .reservations__h1,
-.reservations__content, .groups-content, .sctn-cards,
-.main-sctn, .card-bis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader, 
+.dot, 
+.hdr, 
+.topnav, 
+.reservations__h1,
+.reservations__content, 
+.groups-content, 
+.sctn-cards,
+.main-sctn, 
+.card-bis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /* DRY font-sizes */
-.number, .btn-new, .ftr i {
-    font-size: 0.9em;
+.number, 
+.btn-new, 
+.ftr i {
+  font-size: 0.9em;
 }
-.topnav, .btn, .menu-h2 {
-    font-size: 1em;
+
+.topnav, 
+.btn, 
+.menu-h2 {
+  font-size: 1em;
 }
-.topnav__i, .reservations__content, .instructions i, .card-text-h3 {
-    font-size: 1.1em;
+
+.topnav__i, 
+.reservations__content, 
+.instructions i, 
+.card-text-h3 {
+  font-size: 1.1em;
 }
-.ftr__logo, .pages-hdr i, .sctn-presentation i {
-    font-size: 1.2em;
+
+.ftr__logo, 
+.pages-hdr i, 
+.sctn-presentation i {
+  font-size: 1.2em;
 }
-.reservations__h1, .places-h2, .heart, .presentation-h1 {
-    font-size: 1.5em;
+
+.reservations__h1, 
+.places-h2, 
+.heart, 
+.presentation-h1 {
+  font-size: 1.5em;
 }
+
 /* DRY font-weights */
-.topnav, .btn, .instructions, .number {
-    font-weight: 500;
+.topnav, 
+.btn, 
+.instructions, 
+.number {
+  font-weight: 500;
 }
-.reservations__h1, .h2 {
-    font-weight: 700;
+
+.reservations__h1, 
+.h2 {
+  font-weight: 700;
 }
+
 /* DRY background-colors */
-.sctn-reservations, .instructions, .sctn-places, .main-sctn, .sctn-menu {
-    background-color: var(--lighter-background);
+.sctn-reservations, 
+.instructions, 
+.sctn-places, 
+.main-sctn, 
+.sctn-menu {
+  background-color: var(--lighter-background);
 }
-.loader, .card-content, .card-bis {
-    background-color: var(--white-color);
+
+.loader,
+.card-content, 
+.card-bis {
+  background-color: var(--white-color);
 }
+
 /* DRY colors */
-.btn, .number, .ftr, .ftr__link, .card-check {
-    color: var(--white-color);
+.btn, 
+.number, 
+.ftr, 
+.ftr__link, 
+.card-check {
+  color: var(--white-color);
 }
-.card__link, .card__link:hover, .pages-hdr a, .pages-hdr a:hover, .card-bis {
-    color: var(--black-color); ;
+
+.card__link, 
+.card__link:hover, 
+.pages-hdr a, 
+.pages-hdr a:hover, 
+.card-bis {
+  color: var(--black-color); 
 }
 
 /**** LOADER *****/
 .loader {
-    height: 100%;
-    position: fixed;
-    z-index: 1000000;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: hidden;
+  height: 100%;
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
 /* animation du loader */
-    animation: fadeOut 0.5s ease-in-out forwards;
-    animation-delay: 3s;
+  animation: fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 3s;
 }
+
 /* dots du loader */
 .loader-dots {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 /* gestion des dot un à un */
 .dot {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    animation: upAndDown 1s ease-in-out infinite;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  animation: upAndDown 1s ease-in-out infinite;
 }
+
 /* animation des dots */
 .dot:nth-child(1) {
-    animation-delay: 0s;
-    background: var(--primary-color);
+  animation-delay: 0s;
+  background: var(--primary-color);
 }
+
 .dot:nth-child(2) {
-    animation-delay: 0.5s;
-    background:  var(--secondary-color);
+  animation-delay: 0.5s;
+  background:  var(--secondary-color);
 }
+
 .dot:nth-child(3) {
-    animation-delay: 1s;
-    background: var(--third-color);
+  animation-delay: 1s;
+  background: var(--third-color);
 }
+
 @keyframes upAndDown {
-    0% {
-        margin-top: 0px;
-    }
-    25% {
-        margin-top: -30px;
-    }
-    50% {
-        margin-top: 0;
-    }
-    75% {
-        margin-top: 30px;
-    }
-    100% {
-        margin-top: 0;
-    }
+  0% {
+    margin-top: 0px;
+  }
+  25% {
+    margin-top: -30px;
+  }
+  50% {
+    margin-top: 0;
+  }
+  75% {
+    margin-top: 30px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
-/* disparition du loader après 3sec */
+
+/* disparition du loader après 3s */
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0; 
-    }
-    100% {
-        display: none;
-        height: 0;
-        width: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0; 
+  }
+  100% {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 }
 
 /* DRY PADDING */
-.hdr, .topnav {
-    padding-top: 15px;
-    padding-bottom: 15px; 
-}
-/* HEADER */
-.hdr {
-    flex-direction: column;
-    border-bottom: 3px solid var(--light-grey);
-}
-.hdr__img {
-    height: 30px;
-}
-/* TOPNAV = endroit où est localisé le site */
+.hdr, 
 .topnav {
-    flex-direction: row;
-    background-color: var(--light-background);
-    color: var(--dark-grey);
-}
-.topnav__i {
-    padding-right: 15px; 
-}
-/* DRY SCTN */
-.reservations__ul, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
-    display: flex;
-    flex-direction: column;
-}
-/* PREMIÈRE SECTION RÉSERVATIONS */
-.sctn-reservations {
-    padding-bottom: 60px;
-    }
-.reservations__ul{
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    padding-top: 40px;
-}
-/* DRY WIDTH/TEXT-ALIGN */
-.reservations__h1, .reservations__content {
-    width: 80%;
-    text-align: center;
-}
-.reservations__h1 {
-    padding-bottom: 15px;
-}
-.reservations__content {
-    color: var(--dark-grey);
-    font-weight: 300;
-    padding-bottom: 27px;  
-}
-/* caractéristiques du btn */
-.btn {
-    width: 215px;
-    margin: auto;
-    border-radius: 25px;
-    border: none;
-    padding: 16px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(360deg,#9356DC, #FF79DA);
-    opacity: 1;
-    transition: opacity 1s;
-}
-/* changement d'apparence du btn au survol de la souris */
-.btn:hover {
-    opacity: 0.7;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px; 
 }
 
+/* HEADER */
+.hdr {
+  flex-direction: column;
+  border-bottom: 3px solid var(--light-grey);
+}
+
+.hdr__img {
+  height: 30px;
+}
+
+/* TOPNAV = endroit où est localisé le site */
+.topnav {
+  flex-direction: row;
+  background-color: var(--light-background);
+  color: var(--dark-grey);
+}
+
+.topnav__i {
+  padding-right: 15px; 
+}
+
+/* DRY SCTN */
+.reservations__ul, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PREMIÈRE SECTION RÉSERVATIONS */
+.sctn-reservations {
+  padding-bottom: 60px;
+}
+
+.reservations__ul{
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* DRY WIDTH/TEXT-ALIGN */
+.reservations__h1, 
+.reservations__content {
+  width: 80%;
+  text-align: center;
+}
+
+.reservations__h1 {
+  padding-bottom: 15px;
+}
+
+.reservations__content { 
+  color: var(--dark-grey);
+  font-weight: 300;
+  padding-bottom: 27px;  
+}
+
+/* caractéristiques du btn */
+.btn {
+  width: 215px;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  padding: 16px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(360deg,#9356DC, #FF79DA);
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* changement d'apparence du btn au survol de la souris */
+.btn:hover {
+  opacity: 0.7;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+}
 
 /* DEUXIÈME SECTION PROCESS */
 .sctn-process {
-    justify-content: center;
-    padding-bottom: 40px;
+  justify-content: center;
+  padding-bottom: 40px;
 }
+
 /*précisions h2 2e section*/
 .process-h2 {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 48px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 48px;
 }
+
 .sctn-groups {
-    align-items: center; 
+  align-items: center; 
 }
+
 /* DRY DISPLAY/F-D/WIDTH */
-.groups-content, .instructions {
-    display: flex;
-    flex-direction: row;
-    width: 95%;
+.groups-content, 
+.instructions {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
 }
+
 .groups-content {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
+
 .instructions { 
-    align-items: center;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 28px;
-    gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 28px;
+  gap: 20px;
 }
+
 .instructions i {
-    color: var(--grey-icon);
-    margin-left: 5px;
+  color: var(--grey-icon);
+  margin-left: 5px;
 }
+
 .instructions i:hover{
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
+
 .number {
-    box-sizing: border-box;
-    border-radius: 25px;
-    width: 25px;
-    height: 25px;
-    background-color: var(--primary-color);
-    padding-left: 8px;
-    padding-top: 4px;
-    margin-right: -16px;
-    z-index: 999999;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary-color);
+  padding-left: 8px;
+  padding-top: 4px;
+  margin-right: -16px;
+  z-index: 999999;
 }
+
 .instructions span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* TROISIÈME SECTION PLACES */ 
 .sctn-places {
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 60px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
+
 .places-h2 {
-    padding-top: 20px;
-    padding-bottom: 0;
-    padding-left: 20px;
-}   
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+} 
+
 .sctn-cards {
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
+
 .card-content {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  border-radius: 20px;
 }
+
 .card__img {
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-    height: 210px;
-    background-position: center;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  height: 210px;
+  background-position: center;
 }
+
 .new {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 .btn-new {
-    background: var(--third-color);
-    color: var(--dark-green);
-    width: 80px;
-    height: 30px;
-    padding-top: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: var(--black-color);
-    z-index: 999999;
-    margin-left: -100px;
-    margin-top: 15px;
-    border-radius: 2px;
-    box-sizing: border-box;
+  background: var(--third-color);
+  color: var(--dark-green);
+  width: 80px;
+  height: 30px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: var(--black-color);
+  z-index: 999999;
+  margin-left: -100px;
+  margin-top: 15px;
+  border-radius: 2px;
+  box-sizing: border-box;
 }
+
 /* heart homepage/cards */
 .tolike {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
 }
+
 .heart {
-    padding-top: 20px;
-    padding-right: 25px;
-    width: 32px;
-    cursor: pointer;
-    background-color: transparent;
+  padding-top: 20px;
+  padding-right: 25px;
+  width: 32px;
+  cursor: pointer;
+  background-color: transparent;
 }
+
 /* hover */ 
 .heart:hover > .empty-heart {
-    display: none;
+  display: none;
 }
+
 .heart:hover > .full-heart {
-    display: block;
+  display: block;
 }
+
 .heart:hover > .full-heart i {
-    opacity: 1;
+  opacity: 1;
 }
+
 .full-heart {
-    display: none;
+  display: none;
 }
+
 .full-heart i {
-    opacity: 0;
-    color: var(--primary-color);
+  opacity: 0;
+  color: var(--primary-color);
 /* animation remplissage du coeur */
-    animation: linear-gradient 1s ease-out; 
+  animation: linear-gradient 1s ease-out; 
 }
+
 /*couleurs successives*/
 @keyframes linear-gradient {
-    0% {
-        color: var(--primary-color);
-    }
-    50% {
-        color: var(--secondary-color);
-    }
-    100% {
-        color: var(--primary-color); 
-    }
+  0% {
+    color: var(--primary-color);
+  }
+  50% {
+    color: var(--secondary-color);
+  }
+  100% {
+    color: var(--primary-color); 
+  }
 }
+
 .zone {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-top: -12px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: -12px;
 }
 
 /* FOOTER */
 .ftr {
-    background-color: var(--dark-grey);
-    padding-left: 20px;
-    padding-bottom: 20px;
-    gap: 6px;
+  background-color: var(--dark-grey);
+  padding-left: 20px;
+  padding-bottom: 20px;
+  gap: 6px;
 }
+
 .ftr__logo {
-    font-family: 'shrikhand', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  font-family: 'shrikhand', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
-.ac-i, .ss-i {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+
+.ac-i, 
+.ss-i {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+
 .rotated i {
-    transform: rotate(-35deg);
+  transform: rotate(-35deg);
 }
+
 .ftr i {
-    padding-right: 7px;
+  padding-right: 7px;
 }
+
 .ftr__link:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
-
-
 
 /************************************ PAGES 2 et + DU SITE *******************************************/
 /* header pages 2, 3, 4 et 5 */
 .pages-hdr {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 15px; 
-    border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 15px; 
+  border-bottom: none;
 }
+
 .pages-hdr img {
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
+
 .pages-hdr i {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 /* bannière */
 .banner__img {
-    object-fit: cover;
-    padding-bottom: 30px;
-    height: 275px;
+  object-fit: cover;
+  padding-bottom: 30px;
+  height: 275px;
 }
 
 /* section où sont présentés les menus */
 .main-sctn {
-    flex-direction: column;
-    margin: auto;
-    padding-bottom: 60px;
-    border-radius: 50px 50px 0 0;
-    position: relative;
-    margin-top: -80px;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 60px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  margin-top: -80px;
 }
+
 .sctn-presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 20px;
 }
+
 .presentation-h1 {
-    font-family: 'shrikhand', sans-serif;
-    padding-top: 0;
-    padding-right: 0;
-    padding-left: 0;
-    margin-left: 0;
+  font-family: 'shrikhand', sans-serif;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
+
 .sctn-presentation i {
-    padding-top: 0;
+  padding-top: 0;
 }
+
 .sctn-menu {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    width: 95%;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 95%;
+  padding: 0;
 }
+
 .menu-h2 {
-    font-weight: lighter;
-    border-bottom: 3px solid var(--third-color);
-    padding-bottom: 5px;
-    width: 40px;
+  font-weight: lighter;
+  border-bottom: 3px solid var(--third-color);
+  padding-bottom: 5px;
+  width: 40px;
 }
+
 .menu__item {
 /* animation en cascade */
-    animation: fadeIn 3s ease-in-out forwards;
-    opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
 }
+
 /* entrées */
 .first:nth-child(1), .first:nth-child(2), .first:nth-child(3){
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
+
 /* plats */
 .second:nth-child(1), .second:nth-child(2), .second:nth-child(3){
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
+
 /*desserts */
 .third:nth-child(1), .third:nth-child(2), .third:nth-child(3){
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
+
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
 .card-bis {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;/*gère l'espace entre le menu et le check*/
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 20px;
-    height: 69px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;/*gère l'espace entre le menu et le check*/
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 69px;
 }
+
 .card-text {
-    width: 70%;
-    padding-left: 15px;
-    padding-bottom: 0;
+  width: 70%;
+  padding-left: 15px;
+  padding-bottom: 0;
 }
+
 .card-text-h3 {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 5px;
-    font-size: 1em;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  font-size: 1em;
 }
+
 .card-text p {
-    margin:0;
-    padding-bottom: 0;
-    font-weight: 300;
-    font-size: 0.9em;
+  margin:0;
+  padding-bottom: 0;
+  font-weight: 300;
+  font-size: 0.9em;
 }
+
 .price {
-    width: 30px;
-    font-weight: bold; 
-    padding-top: 25px;
+  width: 30px;
+  font-weight: bold; 
+  padding-top: 25px;
 }
+
 .card-check {
-    background-color: var(--third-color);
-    padding: 20px;
-    font-size: 1.5rem;
-    margin-right: -90px;
-    transition: 0.3s;
+  background-color: var(--third-color);
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-right: -90px;
+  transition: 0.3s;
 }
+
 .card-bis:hover > .card-check {
-    margin-right: 0;
+  margin-right: 0;
 }
+
 .card-bis:hover > .card-check i {
-    animation: rotate 0.5s ease-in-out;
+  animation: rotate 0.5s ease-in-out;
 }
+
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 /*ellipsis
 .overflow-ellipsis {
     overflow: hidden;
@@ -561,167 +692,213 @@ ul, li {
     text-overflow: ellipsis;
     width: 90%;
 }*/
+
 /*btn commander*/
 .btn-cta {
     width: 190px;   
     margin-top: 20px;
 }
+
 /* FOOTER : identique à celui de la homepage*/
 
 /*********************** Media queries tablette *********************/
 @media screen and (min-width: 769px) and (max-width: 999px) {  
 /* DRY MARGIN */
-    .process-h2 , .sctn-cards, .ac-i, .ss-i {
-        margin: auto;
+    .process-h2 , 
+    .sctn-cards, 
+    .ac-i, 
+    .ss-i {
+      margin: auto;
     }
+
 /* DEUXIEME SECTION PROCESS */
     .process-h2 {
-        padding-bottom: 40px;
+      padding-bottom: 40px;
     }
+
     .groups-content {
-        width: 40%;
+      width: 40%;
     }
+
     .instructions {
-        width: 95%;
-        padding-left: 40px;
-        align-items: center;
-        gap: 30px;
+      width: 95%;
+      padding-left: 40px;
+      align-items: center;
+      gap: 30px;
     }
+
     .instructions i {
-        margin-right: -10px;
-        font-size: 1em;
+      margin-right: -10px;
+      font-size: 1em;
     }
+
 /* TROISIÈME SECTION PLACES */
     .places-h2 {
-        margin: auto;
-        padding-bottom: 35px;
+      margin: auto;
+      padding-bottom: 35px;
     }
+
     .sctn-cards {
-        width: 90%;
+      width: 90%;
     }
+
     .card-content {
-        width: 100%;
+      width: 100%;
     }
+
     .card__img {
-        object-fit: cover;
+      object-fit: cover;
     }
+
 /* pages menu : price */
     .price {
-        width: 30px;
+      width: 30px;
     }
+
     .sctn-menu {
-        width: 70%;
+      width: 70%;
        }
 
 /* FOOTER */
     .ftr {
-        flex-direction: column;
-        justify-content: center;
-        gap: 0;
-        text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      text-align: center;
     }
+
     .ftr__logo {
-        padding-right: 20px;
+      padding-right: 20px;
     }
-    .ac-i,  .ss-i {
-        flex-direction: row;
-        padding-top: 5px;
+
+    .ac-i,  
+    .ss-i {
+      flex-direction: row;
+      padding-top: 5px;
     } 
 }
 
 /*********************** Media queries desktop **********************/
 @media screen and (min-width: 999px) { 
 /* DRY MARGIN */
-    .sctn-process, .groups-content, .sctn-places, .sctn-cards {
-        margin: auto;
-        } 
+    .sctn-process, 
+    .groups-content, 
+    .sctn-places, 
+    .sctn-cards {
+      margin: auto;
+    } 
+
 /* PREMIÈRE SECTION RESERVATION */
 .sctn-reservations {
-    padding-bottom: 30px;
+      padding-bottom: 30px;
     }
+
 /* DEUXIEME SECTION PROCESS */
     .sctn-process {
-        width: 82%;
+      width: 82%;
     }
+
     .process-h2 {
-        padding-top: 40px;
-        margin-left: 4%;
+      padding-top: 40px;
+      margin-left: 4%;
     }
-    .sctn-groups, .groups-content {
-        flex-direction: row;  
-    }
+
+    .sctn-groups, 
     .groups-content {
-        width: 35%;
+      flex-direction: row;  
     }
+
+    .groups-content {
+      width: 35%;
+    }
+
     .instructions {
-        width: 320px;
+      width: 320px;
     }
+
 /* TROISIÈME SECTION PLACES */
-    .places, .places-h2 {
-        padding-top: 0;
-    }
+    .places, 
     .places-h2 {
-        padding-bottom: 10px;
-        margin-left: 12%;
+      padding-top: 0;
     }
+
+    .places-h2 {
+      padding-bottom: 10px;
+      margin-left: 12%;
+    }
+
     .sctn-cards {
-        width: 80%;
-        flex-direction: row;
-        gap: 90px;
-        flex-wrap: wrap;
+      width: 80%;
+      flex-direction: row;
+      gap: 90px;
+      flex-wrap: wrap;
     }
+
     .card-content {   
-        width: 43%; 
-        margin-bottom: 30px;
+      width: 43%; 
+      margin-bottom: 30px;
     }
+
     .card__img {
-        height: 230px; 
+      height: 230px; 
     }
+
 /* pages menu */
     .price {
-        width: 20px;
+      width: 20px;
     }
+
     .main-sctn {
-        width: 80%;
+      width: 80%;
     }
+
 /* placement titre et <i> coeur */
     .sctn-presentation {
-        justify-content: center;
-        gap: 30px;
+      justify-content: center;
+      gap: 30px;
     }
+
     .sctn-menu {
-        width: 70%;
+      width: 70%;
     }
+
 /* FOOTER */
     .ftr {
-        flex-direction: row;
-        padding-left: 0;
-        padding-bottom: 50px;
+      flex-direction: row;
+      padding-left: 0;
+      padding-bottom: 50px;
     }
+
     .ftr__logo {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-right: 60px;
-        padding-left: 80px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-right: 60px;
+      padding-left: 80px;
     }
-    .ac-i, .ss-i {
-        flex-direction: row;
-        padding-top: 24px;
-        justify-content: flex-end;
-    }
+
+    .ac-i, 
     .ss-i {
-        padding-left: 50px;
-        gap: 18px;
+      flex-direction: row;
+      padding-top: 24px;
+      justify-content: flex-end;
     }
+
+    .ss-i {
+      padding-left: 50px;
+      gap: 18px;
+    }
+
     .order--one {
-        order: 3;
+      order: 3;
     }
+
     .order--two {
-        order: 1;
-        flex: 1;
+      order: 1;
+      flex: 1;
     }
+
     .order--three {
-        order: 2;
+      order: 2;
     }
 }
 
