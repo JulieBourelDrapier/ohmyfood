@@ -316,7 +316,8 @@ li {
 }
 
 /* changement d'apparence du btn au survol de la souris */
-.btn:hover {
+.btn:hover,
+.btn:focus {
   opacity: 0.7;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
@@ -365,10 +366,8 @@ li {
   margin-left: 5px;
 }
 
-/*.instructions i:hover{
-  color: var(--primary-color);
-}*/
-.instructions:hover i {
+.instructions:hover i,
+.instructions:focus i {
     color: var(--primary-color);
 }
 
@@ -537,7 +536,8 @@ li {
   padding-right: 7px;
 }
 
-.ftr__link:hover {
+.ftr__link:hover,
+.ftr__link:focus {
   color: var(--primary-color);
 }
 
