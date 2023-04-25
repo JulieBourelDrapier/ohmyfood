@@ -1,4 +1,4 @@
-/* Projet Ohmyfood debuté le 16 mars sur l'ancienne version */
+/* Projet Ohmyfood debuté le 16 mars nouvelle version */
 /* variables */
 :root {
 /*couleurs principales du site*/
@@ -473,13 +473,22 @@ li {
 /*couleurs successives*/
 @keyframes linear-gradient {
   0% {
-    color: var(--primary-color);
+    color:  var(--primary-color);
   }
-  30% {
+  20% {
     color: var(--secondary-color);
   }
-  100% {
-    color: var(--primary-color); 
+  50% {
+    color:  var(--primary-color);
+  }
+  70% {
+    color: var(--secondary-color);
+  }
+  90%{
+    color: var(--primary-color);
+  }
+  100%{
+    color: var(--primary-color);
   }
 }
 
