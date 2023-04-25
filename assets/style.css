@@ -230,7 +230,6 @@ li {
 
 /* DRY padding-top header */
 .hdr, 
-.hdr__img,
 .topnav {
   padding-top: 15px;
 }
@@ -243,6 +242,7 @@ li {
 .hdr__img {
   height: 30px;
   padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 /* TOPNAV = endroit où est localisé le site */
