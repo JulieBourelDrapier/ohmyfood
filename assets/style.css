@@ -260,7 +260,12 @@ li {
 }
 
 /* DRY SCTN */
-.reservations__ul, .sctn-process, .sctn-groups, .sctn-places, .restaurant, .ftr  {
+.reservations__ul, 
+.sctn-process, 
+.sctn-groups, 
+.sctn-places, 
+.restaurant, 
+.ftr  {
   display: flex;
   flex-direction: column;
 }
@@ -271,27 +276,28 @@ li {
 }
 
 .reservations__ul{
-  padding: 0;
-  margin: 0;
   align-items: center;
-  padding-top: 40px;
 }
 
-/* DRY WIDTH/TEXT-ALIGN */
-.reservations__h1, 
-.reservations__content {
-  width: 80%;
+/* DRY TEXT-ALIGN */ 
+.reservations__content,
+.reservations__h1 {
   text-align: center;
 }
 
 .reservations__h1 {
   padding-bottom: 15px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .reservations__content { 
   color: var(--dark-grey);
   font-weight: 300;
-  padding-bottom: 27px;  
+  padding-bottom: 15px; 
+  width: 80%; 
 }
 
 /* caractéristiques du btn */
@@ -891,6 +897,11 @@ li {
     .ss-i {
       padding-left: 50px;
       gap: 18px;
+      
+    }
+
+    .ftr__link {
+      padding-left: 10px;
     }
 
     .order--one {
