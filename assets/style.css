@@ -449,6 +449,7 @@ li {
   width: 32px;
   cursor: pointer;
   background-color: transparent;
+  margin: 0;
 }
 
 /* hover */ 
