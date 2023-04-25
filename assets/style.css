@@ -475,7 +475,7 @@ li {
   0% {
     color: var(--primary-color);
   }
-  50% {
+  30% {
     color: var(--secondary-color);
   }
   100% {
@@ -675,18 +675,7 @@ li {
   margin-right: 0;
 }
 
-/*.card-bis:hover > .card-check i {
-  animation: rotate 0.5s ease-in-out;
-}*/
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /*ellipsis
 .overflow-ellipsis {
