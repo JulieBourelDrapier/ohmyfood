@@ -429,6 +429,7 @@ li {
   color: var(--dark-green);
   width: 80px;
   height: 30px;
+  padding-top: 6px;
   padding-left: 10px;
   padding-right: 10px;
   border: var(--black-color);
