@@ -694,15 +694,13 @@ li {
   margin-right: 0;
 }
 
-
-
-/*ellipsis
+/*ellipsis*/
 .overflow-ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 90%;
-}*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 
 /*btn commander*/
 .btn-cta {
@@ -802,6 +800,10 @@ li {
 /* PREMIÈRE SECTION RESERVATION */
 .sctn-reservations {
       padding-bottom: 30px;
+    }
+
+.reservations__h1 {
+      font-size: 40px;
     }
 
 /* DEUXIEME SECTION PROCESS */
