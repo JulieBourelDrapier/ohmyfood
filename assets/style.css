@@ -484,7 +484,8 @@ li {
 /*couleurs successives*/
 @keyframes linear-gradient {
   0% {
-    color:  var(--primary-color);
+    color: var(--primary-color);
+  
   }
   10% {
     color: var(--secondary-color);
@@ -494,7 +495,7 @@ li {
   }
   80% {
     color: var(--secondary-color);
-  }
+  }*/
   100%{
     color: var(--primary-color);
   }
