@@ -463,7 +463,7 @@ li {
 }
 
 .heart-animate:hover{
-  animation: heart-transition 0.8s forwards;
+  animation: heart-transition 1s forwards;
   fill: url(#paint0_linear_25368_713);
   stroke: url(#paint0_linear_25368_713);
 }
@@ -678,7 +678,7 @@ li {
   padding: 20px;
   font-size: 1.5rem;
   margin-right: -90px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .card-bis:hover > .card-check {
